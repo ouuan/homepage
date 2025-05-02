@@ -582,6 +582,17 @@
     "/assets/dino-D6zoMB4U.webp",
     "/assets/router-mc-CtaXOCn2.webp"
   ],
+  "src/inline.scss?inline": [
+    "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
+    "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
+    "/assets/NotoSerif-latin-regular-italic-BefsV4hZ.woff2",
+    "/assets/NotoSerif-latin-regular-normal-BV_iYGc9.woff2",
+    "/assets/photo-1R9vEHB3.webp",
+    "/assets/bitmap-allocator-CvMmaP2r.webp",
+    "/assets/cpeditor-By8oVJbo.webp",
+    "/assets/dino-D6zoMB4U.webp",
+    "/assets/router-mc-CtaXOCn2.webp"
+  ],
   "src/main.ts": [
     "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
     "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
