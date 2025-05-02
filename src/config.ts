@@ -3,6 +3,11 @@ import type { UseHeadInput } from '@unhead/vue';
 export const NAME = 'Yufan You';
 export const CHINESE_NAME = '游宇凡';
 export const SITE_URL = 'https://yufanyou.com';
+export const DESCRIPTION = [
+  'Yufan You at Tsinghua University.',
+  'Focused on network, protocol, and web security.',
+  'Particularly interested in parser differentials and semantic gaps.',
+].join(' ');
 export const PHOTO_DESCRIPTION
   = 'Receiving the third-place award at SECCON CTF 13 International Finals in 2025.3';
 

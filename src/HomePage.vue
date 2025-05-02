@@ -82,6 +82,7 @@ import ServiceSection from './ServiceSection.vue';
 import {
   ADDITIONAL_HEAD,
   CHINESE_NAME,
+  DESCRIPTION,
   NAME,
   SITE_URL,
 } from './config';
@@ -133,6 +134,12 @@ useHead({
   htmlAttrs: { lang: 'en' },
   link: [
     { rel: 'canonical', href: SITE_URL },
+  ],
+  meta: [
+    {
+      name: 'description',
+      content: DESCRIPTION,
+    },
   ],
   style: [
     inlineStyle + fontFaces,
