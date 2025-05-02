@@ -1,0 +1,1 @@
+My teammate and I implemented a motion-controlled version of the [Chrome Dino](https://en.wikipedia.org/wiki/Dinosaur_Game) game on FPGA. We faithfully recreated the original graphics and gameplay mechanics, allowing players to control the T-Rex by physically jumping or crouching. I was responsible for handling sensor input and video output.

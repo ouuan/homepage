@@ -1,0 +1,1 @@
+Using the [Verus](https://github.com/verus-lang/verus) tool for verifying low-level Rust code, I built a simple verified memory allocator for [ArceOS](https://github.com/arceos-org/arceos) and adapted a page table from earlier work to composite an operating system with verified memory components.

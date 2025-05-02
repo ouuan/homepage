@@ -1,0 +1,4 @@
+.vite-ssg-temp/
+dist/
+node_modules/
+public/assets/

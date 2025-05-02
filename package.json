@@ -1,0 +1,36 @@
+{
+  "name": "homepage",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite-ssg build",
+    "preview": "vite preview --open",
+    "lint": "eslint ."
+  },
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@unhead/schema-org": "2.0.8",
+    "@unhead/vue": "2.0.8",
+    "@unocss/reset": "66.1.0-beta.13",
+    "schema-dts": "1.1.5",
+    "vue": "3.5.13"
+  },
+  "devDependencies": {
+    "@ouuan/eslint-config-vue": "2.1.0",
+    "@ouuan/tsconfig-vue": "1.3.4",
+    "@total-typescript/ts-reset": "0.6.1",
+    "@types/node": "22.15.3",
+    "@types/subset-font": "2.3.0",
+    "@unocss/eslint-config": "66.1.0-beta.13",
+    "@vitejs/plugin-vue": "5.2.3",
+    "eslint": "9.25.1",
+    "subset-font": "2.4.0",
+    "typescript": "5.8.3",
+    "unocss": "66.1.0-beta.13",
+    "unplugin-vue-markdown": "28.3.1",
+    "vite": "6.3.3",
+    "vite-ssg": "26.1.1"
+  }
+}
