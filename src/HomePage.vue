@@ -85,6 +85,7 @@ import {
   NAME,
   SITE_URL,
 } from './config';
+import inlineStyle from './inline.scss?inline';
 
 const SECTIONS = [
   { name: 'About', component: AboutSection },
@@ -134,7 +135,7 @@ useHead({
     { rel: 'canonical', href: SITE_URL },
   ],
   style: [
-    fontFaces,
+    inlineStyle + fontFaces,
   ],
 });
 
@@ -148,9 +149,11 @@ useHead(ADDITIONAL_HEAD);
 
 <style>
 :root {
-  @apply 'dark:bg-dark-6 dark:text-gray-2 scheme-light dark:scheme-dark';
-
   font-family: 'Noto Serif Web', 'Noto Serif', ui-serif, serif;
+
+  body {
+    @apply visible;
+  }
 }
 
 .font-chinese {
