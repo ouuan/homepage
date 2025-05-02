@@ -17,7 +17,7 @@ export default defineConfig({
     breakpoints: {
       xs: '28em',
       sm: '36em',
-      md: '48em',
+      md: '55em',
     },
   },
   rules: [

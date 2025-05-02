@@ -8,13 +8,13 @@
         v-for="project of PROJECTS"
         :key="project.title"
       >
-        <section class="my-6 flex gap-x-4">
+        <section class="my-6 flex flex-wrap gap-4 md:flex-nowrap">
           <img
             :src="project.image"
             :alt="project.alt"
             :title="project.alt"
             loading="lazy"
-            class="w-60 b-1 dark:b-dark-5 dark:brightness-80"
+            class="mx-auto b-1 md:w-60 xs:max-w-100 dark:b-dark-5 dark:brightness-80"
           >
           <div>
             <h3 class="font-bold">
