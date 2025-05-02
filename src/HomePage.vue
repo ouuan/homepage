@@ -168,7 +168,11 @@ useHead(ADDITIONAL_HEAD);
 }
 
 footer {
-  margin-bottom: calc(100vh - 4.75rem);
+  margin-bottom: calc(100vh - 7.25rem);
+
+  @screen sm {
+    margin-bottom: calc(100vh - 4.75rem);
+  }
 }
 
 .markdown-body {
