@@ -153,6 +153,8 @@ useHead(ADDITIONAL_HEAD);
 
 <style>
 :root {
+  @apply text-pretty;
+
   font-family: 'Noto Serif Web', 'Noto Serif', ui-serif, serif;
 
   body {
