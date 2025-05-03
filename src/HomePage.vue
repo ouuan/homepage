@@ -1,11 +1,6 @@
 <template>
   <div class="mx-auto max-w-220 px-4">
-    <header
-      :class="[
-        'sticky top-0 z-1 flex justify-center sm:justify-between flex-wrap',
-        'b-b-1 bg-white dark:bg-dark-6 dark:b-gray-4 shadow-sm',
-      ]"
-    >
+    <header class="flex flex-wrap justify-center sm:justify-between">
       <div class="w-full shrink-0 text-center font-italic sm:w-auto">
         <a
           class="block p-2 btn-status"
@@ -202,6 +197,12 @@ useHead(ADDITIONAL_HEAD);
 
 .font-chinese {
   font-family: 'Chinese Name Font', serif;
+}
+
+header {
+  @apply sticky top-0 z-1;
+  @apply 'bg-white shadow-gray-2 shadow-[0_4px_2px_-3px]';
+  @apply 'dark:bg-dark-6 dark:shadow-none dark:b-b-1 dark:b-gray-4'
 }
 
 footer {
