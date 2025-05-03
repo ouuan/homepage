@@ -50,8 +50,7 @@ export interface Conference {
   confAbbr: string;
   confFull: string;
   confUrl: string;
-  year: number;
-  month: string;
+  date: Date;
   address: string;
   publisher: string;
   url?: string;
@@ -78,8 +77,7 @@ export const CONFERENCES: Conference[] = [
     confAbbr: "USENIX Sec '25",
     confFull: '34th USENIX Security Symposium',
     confUrl: 'https://www.usenix.org/conference/usenixsecurity25',
-    year: 2025,
-    month: 'aug',
+    date: new Date('2025-08-13'),
     address: 'Seattle, WA',
     publisher: 'USENIX Association',
   },

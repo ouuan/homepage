@@ -101,7 +101,7 @@ function bibtex(conf: Conference) {
     .slice(0, 3)
     .join('')
     .replace(/\W/g, '');
-  const key = `${authorKey || 'unknown'}${titleKey || 'unknown'}${conf.year}`;
+  const key = `${authorKey || 'unknown'}${titleKey || 'unknown'}${conf.date.getFullYear()}`;
   const isbn = (conf.isbn && `\n  isbn = {${conf.isbn}},`) ?? '';
   const doi = (conf.doi && `\n  doi = {${conf.doi}},`) ?? '';
   const url = (conf.url && `\n  url = {${conf.url}},`) ?? '';
@@ -112,20 +112,22 @@ function bibtex(conf: Conference) {
   booktitle = {${conf.confFull}},
   address = {${conf.address}},
   publisher = {${conf.publisher}},${isbn}${doi}${url}
-  year = {${conf.year}},
-  month = ${conf.month}
+  year = {${conf.date.getFullYear()}},
+  month = ${conf.date.toLocaleString('en-US', { month: 'short' }).toLowerCase()},
+  day = {${conf.date.getDate()}}
 }`;
 }
 
 useSchemaOrg(CONFERENCES.map<ScholarlyArticle>((conf) => ({
   '@type': 'ScholarlyArticle',
   'name': conf.title,
+  'headline': conf.title,
   'author': conf.authors.map((author) => (
     author === NAME
       ? { '@id': `${SITE_URL}#identity` }
       : { '@type': 'Person', 'name': author }
   )),
-  'datePublished': new Date(`${conf.year} ${conf.month} 2`).toISOString().slice(0, 7),
+  'datePublished': conf.date.toISOString(),
   'publisher': {
     '@type': 'Organization',
     'name': conf.publisher,
