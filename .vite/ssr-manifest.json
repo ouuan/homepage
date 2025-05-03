@@ -384,17 +384,6 @@
     "/assets/dino-qDUkrDQX.webp",
     "/assets/router-mc-DzNAcHrB.webp"
   ],
-  "src/AwardSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
-    "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
-    "/assets/NotoSerif-latin-regular-italic-BefsV4hZ.woff2",
-    "/assets/NotoSerif-latin-regular-normal-BV_iYGc9.woff2",
-    "/assets/photo-1R9vEHB3.webp",
-    "/assets/bitmap-allocator-CvMmaP2r.webp",
-    "/assets/cpeditor-GTakcXGf.webp",
-    "/assets/dino-qDUkrDQX.webp",
-    "/assets/router-mc-DzNAcHrB.webp"
-  ],
   "src/HomePage.vue?vue&type=script&setup=true&lang.ts": [
     "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
     "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
@@ -417,6 +406,17 @@
     "/assets/dino-qDUkrDQX.webp",
     "/assets/router-mc-DzNAcHrB.webp"
   ],
+  "src/ListSection.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
+    "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
+    "/assets/NotoSerif-latin-regular-italic-BefsV4hZ.woff2",
+    "/assets/NotoSerif-latin-regular-normal-BV_iYGc9.woff2",
+    "/assets/photo-1R9vEHB3.webp",
+    "/assets/bitmap-allocator-CvMmaP2r.webp",
+    "/assets/cpeditor-GTakcXGf.webp",
+    "/assets/dino-qDUkrDQX.webp",
+    "/assets/router-mc-DzNAcHrB.webp"
+  ],
   "src/ProjectSection.vue?vue&type=script&setup=true&lang.ts": [
     "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
     "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
@@ -429,17 +429,6 @@
     "/assets/router-mc-DzNAcHrB.webp"
   ],
   "src/PublicationSection.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
-    "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
-    "/assets/NotoSerif-latin-regular-italic-BefsV4hZ.woff2",
-    "/assets/NotoSerif-latin-regular-normal-BV_iYGc9.woff2",
-    "/assets/photo-1R9vEHB3.webp",
-    "/assets/bitmap-allocator-CvMmaP2r.webp",
-    "/assets/cpeditor-GTakcXGf.webp",
-    "/assets/dino-qDUkrDQX.webp",
-    "/assets/router-mc-DzNAcHrB.webp"
-  ],
-  "src/ServiceSection.vue?vue&type=script&setup=true&lang.ts": [
     "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
     "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
     "/assets/NotoSerif-latin-regular-italic-BefsV4hZ.woff2",
