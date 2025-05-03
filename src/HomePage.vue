@@ -122,28 +122,34 @@ const SECTIONS = [
 // 1. https://github.com/unocss/unocss/issues/4327
 // 2. I'm not sure why, but it uses the full-axis font file when specifying separate weights
 
-const fontFaces = [
+const fonts = [
   {
     style: 'normal',
     weight: 400,
     url: fontRegularNormal,
+    preload: true, // for most text
   },
   {
     style: 'italic',
     weight: 400,
     url: fontRegularItalic,
+    preload: false, // no layout shift for now
   },
   {
     style: 'normal',
     weight: 700,
     url: fontBoldNormal,
+    preload: true, // to prevent layout shift
   },
   {
     style: 'italic',
     weight: 700,
     url: fontBoldItalic,
+    preload: false, // not used yet
   },
-].map((font) => `@font-face {
+];
+
+const fontFaces = fonts.map((font) => `@font-face {
   font-family: 'Noto Serif Web';
   font-style: ${font.style};
   font-weight: ${font.weight};
@@ -156,6 +162,13 @@ useHead({
   htmlAttrs: { lang: 'en' },
   link: [
     { rel: 'canonical', href: SITE_URL },
+    ...fonts.filter((font) => font.preload).map((font) => ({
+      rel: 'preload',
+      href: font.url,
+      as: 'font',
+      type: 'font/woff2',
+      crossorigin: '',
+    } as const)),
   ],
   meta: [
     {

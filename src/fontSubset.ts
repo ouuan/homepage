@@ -38,11 +38,17 @@ async function generateFont(opts: Options) {
 
   const url = `/assets/${outName}`;
 
-  return `@font-face {
+  const css = `<style>
+  @font-face {
     font-family: '${opts.fontFamily}';
     src: url('${url}') format('woff2');
     font-display: swap;
-  }`.replace(/\s+/g, ' ');
+  }
+  </style>`;
+
+  const preload = `<link rel="preload" as="font" href="${url}" type="font/woff2" crossorigin>`;
+
+  return (css + preload).replace(/\s+/g, ' ');
 }
 
 export default function fontSubsetPlugin(opts: Options): Plugin {
@@ -50,8 +56,8 @@ export default function fontSubsetPlugin(opts: Options): Plugin {
   return {
     name: 'font-subset',
     async transformIndexHtml(html: string) {
-      const css = await generated;
-      return html.replace(/<\/head>/, () => `<style>${css}</style></head>`);
+      const injection = await generated;
+      return html.replace('</head>', () => `${injection}</head>`);
     },
   };
 };
