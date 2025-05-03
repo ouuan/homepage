@@ -9,13 +9,15 @@
         :key="project.title"
       >
         <section class="my-4 flex flex-wrap gap-4 md:flex-nowrap">
-          <img
-            :src="project.image"
-            :alt="project.alt"
-            :title="project.alt"
-            loading="lazy"
-            class="mx-auto b-1 md:w-60 xs:max-w-100 dark:b-dark-5 dark:brightness-80"
-          >
+          <div class="mx-auto flex">
+            <img
+              :src="project.image"
+              :alt="project.alt"
+              :title="project.alt"
+              loading="lazy"
+              class="b-1 md:w-60 xs:max-w-100 dark:b-dark-5 dark:brightness-80"
+            >
+          </div>
           <div>
             <h3 class="font-bold">
               {{ project.title }}

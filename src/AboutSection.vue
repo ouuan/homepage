@@ -18,12 +18,14 @@
         </ul>
       </div>
     </div>
-    <img
-      :src="photo"
-      :alt="`Photo: ${PHOTO_DESCRIPTION}`"
-      :title="PHOTO_DESCRIPTION"
-      class="photo mx-auto w-32 shadow-md"
-    >
+    <div class="mx-auto shrink-0">
+      <img
+        :src="photo"
+        :alt="`Photo: ${PHOTO_DESCRIPTION}`"
+        :title="PHOTO_DESCRIPTION"
+        class="photo w-32 shadow-md"
+      >
+    </div>
   </div>
 </template>
 
