@@ -59,7 +59,10 @@
     </main>
     <footer class="b-t-1 dark:b-gray-4">
       <div class="mt-4 flex justify-center gap-2 text-sm text-gray-8 dark:text-gray-3">
-        <a href="https://github.com/ouuan/homepage">Page Source Code</a>
+        <a
+          href="https://github.com/ouuan/homepage"
+          class="underline"
+        >Page Source Code</a>
         <span class="after-content-['·']" />
         <span>Designed by Yufan You</span>
       </div>
