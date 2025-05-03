@@ -47,7 +47,7 @@
           :id="section.name.toLowerCase()"
           :name="section.name.toLowerCase()"
           aria-hidden="true"
-          class="relative top--22 sm:top--12"
+          class="relative top--25 sm:top--15"
         />
         <h2 :class="['text-6', index === 0 && 'sr-only']">
           {{ section.name }}
