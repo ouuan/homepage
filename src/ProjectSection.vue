@@ -20,8 +20,10 @@
             <h3 class="font-bold">
               {{ project.title }}
             </h3>
-            <component :is="project.description" />
-            <div class="mt-4 flex gap-2">
+            <div class="my-4">
+              <component :is="project.description" />
+            </div>
+            <div class="flex gap-2">
               <template
                 v-for="([key, display]) of PROJECT_ITEMS"
                 :key="key"

@@ -38,7 +38,7 @@
         <span class="font-chinese relative top--0.1">{{ CHINESE_NAME }}</span>
       </h1>
       <section
-        v-for="section of SECTIONS"
+        v-for="(section, index) of SECTIONS"
         :key="section.name"
         class="my-6"
       >
@@ -49,9 +49,7 @@
           aria-hidden="true"
           class="relative top--22 sm:top--12"
         />
-        <h2
-          class="text-6"
-        >
+        <h2 :class="['text-6', index === 0 && 'sr-only']">
           {{ section.name }}
         </h2>
         <component :is="section.component" />
@@ -176,14 +174,14 @@ footer {
 }
 
 .markdown-body {
+  @apply space-y-4;
+
   p {
-    @apply 'mt-4 hyphens-auto';
+    @apply hyphens-auto;
   }
 
   a {
-    @apply 'text-blue-6 hover:text-blue-7 active:text-blue-9';
-    @apply 'dark:text-blue-4 dark:hover:text-blue-5 dark:active:text-blue-6';
-    @apply 'hover:underline contrast-more:underline';
+    @apply link;
   }
 
   img {

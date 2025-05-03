@@ -37,5 +37,10 @@ export default defineConfig({
       'dark:hover:bg-dark-8 dark:active:bg-dark-9',
     ],
     'btn': 'btn-outline btn-status',
+    'link': [
+      'text-blue-6 hover:text-blue-7 active:text-blue-9',
+      'dark:text-blue-4 dark:hover:text-blue-5 dark:active:text-blue-6',
+      'hover:underline contrast-more:underline',
+    ],
   },
 });

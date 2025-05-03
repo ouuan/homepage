@@ -3,7 +3,7 @@
     <div>
       <about-content />
       <div>
-        <ul class="markdown-body mt-4 flex">
+        <ul class="mt-4 flex">
           <li
             v-for="social of SOCIALS"
             :key="social.name"
@@ -12,6 +12,7 @@
             <a
               :href="social.url"
               rel="me"
+              class="link"
             >{{ social.name }}</a>
           </li>
         </ul>
