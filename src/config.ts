@@ -44,42 +44,38 @@ export const SOCIALS: Social[] = [
   },
 ];
 
-export interface Award {
+export interface ListItem {
   title: string;
-  year: number;
+  time: string;
   note?: string;
 }
 
-export const AWARDS: Award[] = [
+export const AWARDS: ListItem[] = [
   {
     title: 'Third Place in SECCON CTF 13 International Finals',
     note: 'As Blue-Lotus Team Member',
-    year: 2025,
+    time: '2025',
   },
   {
-    title: 'Tsinghua University Innovation and Technology Scholarship',
-    year: 2024,
+    title: 'Scholarship for Science and Technology Innovation Excellence, Tsinghua University',
+    time: '2024',
   },
   {
     title: 'Grand Prize in THUCTF 2023',
     note: 'As Individual, First Place Among 127 Tsinghua Students',
-    year: 2023,
+    time: '2023',
   },
   {
     title: 'Silver Medal in 37th CCF National Olympiad in Informatics (NOI 2020)',
-    year: 2020,
+    time: '2020',
   },
 ];
 
-export interface Service {
-  title: string;
-  time: string;
-}
-
-export const SERVICES: Service[] = [
+export const SERVICES: ListItem[] = [
   {
     title: 'Teaching Assistant of Digital Logic Design',
     time: 'Spring 2025',
+    note: 'Guide students to design FPGA projects',
   },
 ];
 

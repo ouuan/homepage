@@ -51,7 +51,10 @@
         <h2 :class="['text-6', index === 0 && 'sr-only']">
           {{ section.name }}
         </h2>
-        <component :is="section.component" />
+        <component
+          :is="section.component"
+          v-bind="section.props"
+        />
       </section>
     </main>
     <footer class="b-t-1 dark:b-gray-4">
@@ -72,25 +75,44 @@ import fontBoldNormal from '../fonts/NotoSerif/NotoSerif-latin-bold-normal.woff2
 import fontRegularItalic from '../fonts/NotoSerif/NotoSerif-latin-regular-italic.woff2';
 import fontRegularNormal from '../fonts/NotoSerif/NotoSerif-latin-regular-normal.woff2';
 import AboutSection from './AboutSection.vue';
-import AwardSection from './AwardSection.vue';
+import ListSection from './ListSection.vue';
 import ProjectSection from './ProjectSection.vue';
 import PublicationSection from './PublicationSection.vue';
-import ServiceSection from './ServiceSection.vue';
 import {
   ADDITIONAL_HEAD,
+  AWARDS,
   CHINESE_NAME,
   DESCRIPTION,
   NAME,
+  SERVICES,
   SITE_URL,
 } from './config';
 import inlineStyle from './inline.scss?inline';
 
 const SECTIONS = [
-  { name: 'About', component: AboutSection },
-  { name: 'Publications', abbr: 'Pubs', component: PublicationSection },
-  { name: 'Projects', component: ProjectSection },
-  { name: 'Awards', component: AwardSection },
-  { name: 'Services', component: ServiceSection },
+  {
+    name: 'About',
+    component: AboutSection,
+  },
+  {
+    name: 'Publications',
+    abbr: 'Pubs',
+    component: PublicationSection,
+  },
+  {
+    name: 'Projects',
+    component: ProjectSection,
+  },
+  {
+    name: 'Awards',
+    component: ListSection,
+    props: { list: AWARDS },
+  },
+  {
+    name: 'Services',
+    component: ListSection,
+    props: { list: SERVICES },
+  },
 ];
 
 // not using @unocss/preset-web-fonts, because:
