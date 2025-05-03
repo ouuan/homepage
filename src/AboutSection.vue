@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap-reverse items-center justify-between gap-x-4 sm:flex-nowrap">
+  <div class="flex flex-wrap-reverse items-center justify-between gap-4 sm:flex-nowrap">
     <div>
       <about-content />
       <div>
@@ -22,7 +22,7 @@
       :src="photo"
       :alt="`Photo: ${PHOTO_DESCRIPTION}`"
       :title="PHOTO_DESCRIPTION"
-      class="photo mt-4 w-32"
+      class="photo mx-auto w-32 shadow-md"
     >
   </div>
 </template>
@@ -59,12 +59,14 @@ useSchemaOrg([
 </script>
 
 <style>
-.photo {
-  mask-image: radial-gradient(
-    closest-side,
-    black 0%,
-    rgba(0, 0, 0, 0.8) 95%,
-    transparent 100%
-  );
+@screen sm {
+  .photo {
+    mask-image: radial-gradient(
+      closest-side,
+      black 0%,
+      rgba(0, 0, 0, 0.8) 95%,
+      transparent 100%
+    );
+  }
 }
 </style>
