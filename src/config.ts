@@ -40,6 +40,7 @@ export const SOCIALS: Social[] = [
   {
     name: 'CTFtime',
     url: 'https://ctftime.org/user/172368',
+    sameAs: true,
   },
 ];
 
