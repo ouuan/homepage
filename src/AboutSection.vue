@@ -3,7 +3,7 @@
     <div>
       <about-content />
       <div>
-        <ul class="mt-4 flex">
+        <ul class="mt-4 flex flex-wrap">
           <li
             v-for="social of SOCIALS"
             :key="social.name"
