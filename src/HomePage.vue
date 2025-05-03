@@ -45,7 +45,6 @@
         <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
         <a
           :id="section.name.toLowerCase()"
-          :name="section.name.toLowerCase()"
           aria-hidden="true"
           class="relative top--25 sm:top--15"
         />
