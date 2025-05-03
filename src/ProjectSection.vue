@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="">
+    <div>
       Selected miscellaneous projects
     </div>
     <ul>
@@ -8,7 +8,7 @@
         v-for="project of PROJECTS"
         :key="project.title"
       >
-        <section class="my-6 flex flex-wrap gap-4 md:flex-nowrap">
+        <section class="my-4 flex flex-wrap gap-4 md:flex-nowrap">
           <img
             :src="project.image"
             :alt="project.alt"
@@ -20,7 +20,7 @@
             <h3 class="font-bold">
               {{ project.title }}
             </h3>
-            <div class="my-4">
+            <div class="my-2">
               <component :is="project.description" />
             </div>
             <div class="flex gap-2">

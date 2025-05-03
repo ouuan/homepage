@@ -3,9 +3,8 @@
     <li
       v-for="conf of CONFERENCES"
       :key="conf.title"
-      class="my-4"
     >
-      <section class="flex flex-wrap-reverse justify-between gap-x-4 sm:flex-nowrap">
+      <section class="my-4 flex flex-wrap-reverse justify-between gap-x-4 sm:flex-nowrap">
         <div>
           <h3 class="font-bold">
             {{ conf.title }}
@@ -32,6 +31,9 @@
           </div>
           <div class="font-italic">
             {{ conf.confFull }}
+          </div>
+          <div class="my-2">
+            <component :is="conf.description" />
           </div>
           <div class="mt-1 flex flex-wrap items-start gap-2 md:flex-nowrap">
             <span
@@ -83,8 +85,8 @@
 <script setup lang="ts">
 import { useSchemaOrg } from '@unhead/schema-org/vue';
 import type { ScholarlyArticle } from 'schema-dts';
-import { CONFERENCES, NAME, SITE_URL } from './config';
-import type { Conference } from './config';
+import { NAME, SITE_URL } from './config';
+import { CONFERENCES, type Conference } from './publications';
 
 const CONFERENCE_ITEMS = [
   ['url', 'URL'],
