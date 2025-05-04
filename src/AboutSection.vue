@@ -51,15 +51,17 @@ import { PHOTO_WIDTH } from './constants';
 import AboutContent from './contents/about.md';
 import photo from './images/photo.webp?preset=photo';
 
+const photoHref = new URL(photo[0].src, SITE_URL).href;
+
 useHead({
   meta: [
-    { property: 'og:image', content: new URL(photo[0].src, SITE_URL).href },
+    { property: 'og:image', content: photoHref },
   ],
 });
 
 const photoSchema: ImageObject = {
   '@type': 'ImageObject',
-  'contentUrl': photo[0].src,
+  'contentUrl': photoHref,
   'description': PHOTO_DESCRIPTION,
 };
 

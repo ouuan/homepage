@@ -52,7 +52,10 @@
 </template>
 
 <script setup lang="ts">
+import { useSchemaOrg } from '@unhead/schema-org/vue';
 import { useHead } from '@unhead/vue';
+import type { CreativeWork } from 'schema-dts';
+import { SITE_URL } from './config';
 import {
   PAGE_PADDING,
   PROJECT_IMAGE_AUTO_BREAKPOINT,
@@ -84,4 +87,17 @@ useHead({
   }`,
   ].join(' ').replace(/\s+/g, ' ')],
 });
+
+useSchemaOrg(PROJECTS.map<CreativeWork>((project) => {
+  return {
+    '@type': 'CreativeWork',
+    'name': project.title,
+    'sameAs': PROJECT_ITEMS.map(([key]) => project[key]).filter(Boolean),
+    'image': {
+      '@type': 'ImageObject',
+      'contentUrl': new URL(project.image[0].src, SITE_URL).href,
+      'description': project.alt,
+    },
+  };
+}));
 </script>
