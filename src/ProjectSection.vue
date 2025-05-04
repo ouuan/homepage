@@ -9,19 +9,12 @@
         :key="project.title"
       >
         <section class="project my-4 flex flex-wrap gap-4">
-          <a
-            class="mx-auto flex"
-            target="_blank"
-            :href="project.image[0].src"
-          >
-            <img
-              v-bind="{ ...project.image[0], type: undefined }"
-              :sizes="SIZES"
-              :alt="project.alt"
-              :title="project.alt"
-              class="b-1 dark:b-dark-5 dark:brightness-80"
-            >
-          </a>
+          <image-modal
+            :image="project.image[0]"
+            :sizes="SIZES"
+            :alt="project.alt"
+            image-class="project-img"
+          />
           <div>
             <h3 class="font-bold">
               {{ project.title }}
@@ -55,6 +48,7 @@
 import { useSchemaOrg } from '@unhead/schema-org/vue';
 import { useHead } from '@unhead/vue';
 import type { CreativeWork } from 'schema-dts';
+import ImageModal from './ImageModal.vue';
 import { SITE_URL } from './config';
 import {
   PAGE_PADDING,
@@ -79,12 +73,12 @@ const SIZES = [
 useHead({
   style: [[
     `@media (min-width: ${PROJECT_IMAGE_WRAP_BREAKPOINT}) {
-    .project { flex-wrap: nowrap; }
-    .project > a > img { width: ${PROJECT_IMAGE_NOWRAP_WIDTH}rem; }
-  }`,
+      .project { flex-wrap: nowrap; }
+      .project-img { width: ${PROJECT_IMAGE_NOWRAP_WIDTH}rem; }
+    }`,
     `@media (min-width: ${PROJECT_IMAGE_AUTO_BREAKPOINT}) {
-    .project > a > img { max-width: ${PROJECT_IMAGE_WRAP_WIDTH}rem; }
-  }`,
+      .project-img { max-width: ${PROJECT_IMAGE_WRAP_WIDTH}rem; }
+    }`,
   ].join(' ').replace(/\s+/g, ' ')],
 });
 
@@ -101,3 +95,9 @@ useSchemaOrg(PROJECTS.map<CreativeWork>((project) => {
   };
 }));
 </script>
+
+<style>
+.project-img {
+  @apply b-1 dark:b-dark-5 dark:brightness-80;
+}
+</style>

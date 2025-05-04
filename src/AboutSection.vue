@@ -18,20 +18,13 @@
         </ul>
       </div>
     </div>
-    <a
-      class="mx-auto shrink-0"
-      :href="photo[0].src"
-      target="_blank"
-    >
-      <img
-        v-bind="{ ...photo[0], type: undefined }"
-        :sizes="`${PHOTO_WIDTH}em`"
-        :alt="`Photo: ${PHOTO_DESCRIPTION}`"
-        :title="PHOTO_DESCRIPTION"
-        class="photo-mask shadow-md"
-        :style="`width: ${PHOTO_WIDTH}rem;`"
-      >
-    </a>
+    <image-modal
+      :image="photo[0]"
+      :sizes="`${PHOTO_WIDTH}em`"
+      :alt="PHOTO_DESCRIPTION"
+      image-class="photo"
+      :image-style="`width: ${PHOTO_WIDTH}rem;`"
+    />
   </div>
 </template>
 
@@ -39,6 +32,7 @@
 import { definePerson, useSchemaOrg } from '@unhead/schema-org/vue';
 import { useHead } from '@unhead/vue';
 import type { ImageObject } from 'schema-dts';
+import ImageModal from './ImageModal.vue';
 import {
   AWARDS,
   CHINESE_NAME,
@@ -77,8 +71,10 @@ useSchemaOrg([
 </script>
 
 <style>
-@screen sm {
-  .photo-mask {
+.photo {
+  @apply shadow-md;
+
+  @screen sm {
     mask-image: radial-gradient(
       closest-side,
       black 0%,
