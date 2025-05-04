@@ -221,6 +221,18 @@
     "/assets/NotoSerif-latin-regular-italic-BefsV4hZ.woff2",
     "/assets/NotoSerif-latin-regular-normal-BV_iYGc9.woff2"
   ],
+  "src/ImageModal.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
+    "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
+    "/assets/NotoSerif-latin-regular-italic-BefsV4hZ.woff2",
+    "/assets/NotoSerif-latin-regular-normal-BV_iYGc9.woff2"
+  ],
+  "src/ImageModal.vue?vue&type=style&index=0&lang.css": [
+    "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
+    "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
+    "/assets/NotoSerif-latin-regular-italic-BefsV4hZ.woff2",
+    "/assets/NotoSerif-latin-regular-normal-BV_iYGc9.woff2"
+  ],
   "src/ListSection.vue?vue&type=script&setup=true&lang.ts": [
     "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
     "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
@@ -228,6 +240,12 @@
     "/assets/NotoSerif-latin-regular-normal-BV_iYGc9.woff2"
   ],
   "src/ProjectSection.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
+    "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
+    "/assets/NotoSerif-latin-regular-italic-BefsV4hZ.woff2",
+    "/assets/NotoSerif-latin-regular-normal-BV_iYGc9.woff2"
+  ],
+  "src/ProjectSection.vue?vue&type=style&index=0&lang.css": [
     "/assets/NotoSerif-latin-bold-italic-MZSz2yNw.woff2",
     "/assets/NotoSerif-latin-bold-normal-CspAZIgc.woff2",
     "/assets/NotoSerif-latin-regular-italic-BefsV4hZ.woff2",
