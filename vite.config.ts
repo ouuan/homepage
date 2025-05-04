@@ -9,7 +9,17 @@ import fontSubsetPlugin from './src/fontSubset';
 export default defineConfig({
   plugins: [
     vue({ include: [/\.vue$/, /\.md$/] }),
-    markdown({}),
+    markdown({
+      markdownItSetup(md) {
+        const defaultRender = md.renderer.rules.image;
+        md.renderer.rules.image = (tokens, idx, options, env, self) => {
+          const token = tokens[idx];
+          token?.attrSet('loading', 'lazy');
+          return defaultRender?.(tokens, idx, options, env, self)
+            ?? self.renderToken(tokens, idx, options);
+        };
+      },
+    }),
     unocss(),
     fontSubsetPlugin({
       originalFontPath: resolve(
