@@ -4,6 +4,7 @@ import {
   presetWind3, // https://github.com/unocss/unocss/issues/4568
   transformerDirectives,
 } from 'unocss';
+import { BREAKPOINTS } from './src/constants';
 
 export default defineConfig({
   presets: [
@@ -14,11 +15,7 @@ export default defineConfig({
     transformerDirectives(),
   ],
   theme: {
-    breakpoints: {
-      xs: '28em',
-      sm: '36em',
-      md: '55em',
-    },
+    breakpoints: BREAKPOINTS,
   },
   rules: [
     [

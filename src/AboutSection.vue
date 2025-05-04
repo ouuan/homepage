@@ -18,14 +18,20 @@
         </ul>
       </div>
     </div>
-    <div class="mx-auto shrink-0">
+    <a
+      class="mx-auto shrink-0"
+      :href="photo[0].src"
+      target="_blank"
+    >
       <img
-        :src="photo"
+        v-bind="photo[0]"
+        :sizes="`${PHOTO_WIDTH}em`"
         :alt="`Photo: ${PHOTO_DESCRIPTION}`"
         :title="PHOTO_DESCRIPTION"
-        class="photo w-32 shadow-md"
+        class="photo-mask shadow-md"
+        :style="`width: ${PHOTO_WIDTH}rem;`"
       >
-    </div>
+    </a>
   </div>
 </template>
 
@@ -40,12 +46,13 @@ import {
   SITE_URL,
   SOCIALS,
 } from './config';
+import { PHOTO_WIDTH } from './constants';
 import AboutContent from './contents/about.md';
-import photo from './images/photo.webp';
+import photo from './images/photo.webp?preset=photo';
 
 useHead({
   meta: [
-    { property: 'og:image', content: new URL(photo, SITE_URL).href },
+    { property: 'og:image', content: new URL(photo[0].src, SITE_URL).href },
   ],
 });
 
@@ -62,7 +69,7 @@ useSchemaOrg([
 
 <style>
 @screen sm {
-  .photo {
+  .photo-mask {
     mask-image: radial-gradient(
       closest-side,
       black 0%,

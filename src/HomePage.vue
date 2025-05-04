@@ -1,5 +1,8 @@
 <template>
-  <div class="mx-auto max-w-220 px-4">
+  <div
+    class="mx-auto max-w-220"
+    :style="`padding: 0 ${PAGE_PADDING}rem;`"
+  >
     <header class="flex flex-wrap justify-center sm:justify-between">
       <div class="w-full shrink-0 text-center font-italic sm:w-auto">
         <a
@@ -85,6 +88,7 @@ import {
   SERVICES,
   SITE_URL,
 } from './config';
+import { PAGE_PADDING } from './constants';
 import inlineStyle from './inline.scss?inline';
 
 const SECTIONS = [

@@ -7,3 +7,17 @@ declare module '*.md' {
   const Component: ComponentOptions;
   export default Component;
 }
+
+type ImageAttrs = Record<'type' | 'srcset' | 'src' | 'width' | 'height', string> & {
+  loading: 'eager' | 'lazy';
+};
+
+declare module '*?preset=photo' {
+  const image: [ImageAttrs];
+  export default image;
+}
+
+declare module '*?preset=project' {
+  const image: [ImageAttrs];
+  export default image;
+}

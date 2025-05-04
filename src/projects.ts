@@ -5,15 +5,15 @@ import cpeditorDescription from './contents/cpeditor.md';
 import dinoDescription from './contents/dino.md';
 import routerDescription from './contents/router.md';
 import verusProjectDescription from './contents/verus.md';
-import bitmapAllocatorImage from './images/bitmap-allocator.webp';
-import cpeditorImage from './images/cpeditor.webp';
-import dinoImage from './images/dino.webp';
-import routerMcImage from './images/router-mc.webp';
+import bitmapAllocatorImage from './images/bitmap-allocator.webp?preset=project';
+import cpeditorImage from './images/cpeditor.webp?preset=project';
+import dinoImage from './images/dino.webp?preset=project';
+import routerMcImage from './images/router-mc.webp?preset=project';
 
 export interface Project {
   title: string;
   description: ComponentOptions;
-  image: string;
+  image: [ImageAttrs];
   alt: string;
   time: string;
   code?: string;
