@@ -15,7 +15,7 @@
             :href="project.image[0].src"
           >
             <img
-              v-bind="project.image[0]"
+              v-bind="{ ...project.image[0], type: undefined }"
               :sizes="SIZES"
               :alt="project.alt"
               :title="project.alt"

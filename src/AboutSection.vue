@@ -24,7 +24,7 @@
       target="_blank"
     >
       <img
-        v-bind="photo[0]"
+        v-bind="{ ...photo[0], type: undefined }"
         :sizes="`${PHOTO_WIDTH}em`"
         :alt="`Photo: ${PHOTO_DESCRIPTION}`"
         :title="PHOTO_DESCRIPTION"
