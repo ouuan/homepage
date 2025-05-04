@@ -170,10 +170,12 @@ useHead({
     } as const)),
   ],
   meta: [
-    {
-      name: 'description',
-      content: DESCRIPTION,
-    },
+    { name: 'description', content: DESCRIPTION },
+    { name: 'og:type', content: 'website' },
+    { name: 'og:url', content: SITE_URL },
+    { name: 'og:title', content: NAME },
+    { name: 'og:site_name', content: NAME },
+    { name: 'og:description', content: DESCRIPTION },
   ],
   style: [
     inlineStyle + fontFaces,
