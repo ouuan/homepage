@@ -38,6 +38,7 @@
 <script setup lang="ts">
 import { definePerson, useSchemaOrg } from '@unhead/schema-org/vue';
 import { useHead } from '@unhead/vue';
+import type { ImageObject } from 'schema-dts';
 import {
   AWARDS,
   CHINESE_NAME,
@@ -56,10 +57,16 @@ useHead({
   ],
 });
 
+const photoSchema: ImageObject = {
+  '@type': 'ImageObject',
+  'contentUrl': photo[0].src,
+  'description': PHOTO_DESCRIPTION,
+};
+
 useSchemaOrg([
   definePerson({
     name: NAME,
-    image: photo,
+    image: photoSchema as any, // not sure why the typecheck here is extremely slow
     alternateName: CHINESE_NAME,
     sameAs: SOCIALS.filter((social) => social.sameAs).map((social) => social.url),
     award: AWARDS.map((award) => award.title),
