@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "preview": "vite preview --open",
+    "typecheck": "vue-tsc --noEmit",
     "lint": "eslint ."
   },
   "license": "AGPL-3.0-or-later",
@@ -31,6 +32,7 @@
     "unocss": "66.1.0-beta.13",
     "unplugin-vue-markdown": "28.3.1",
     "vite": "6.3.4",
-    "vite-ssg": "26.1.1"
+    "vite-ssg": "26.1.1",
+    "vue-tsc": "2.2.10"
   }
 }
