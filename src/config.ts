@@ -38,8 +38,8 @@ export const SOCIALS: Social[] = [
     sameAs: true,
   },
   {
-    name: 'CTFtime',
-    url: 'https://ctftime.org/user/172368',
+    name: 'Mastodon',
+    url: 'https://mastodon.online/@ouuan',
     sameAs: true,
   },
 ];
