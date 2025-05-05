@@ -38,13 +38,13 @@
       <section
         v-for="(section, index) of SECTIONS"
         :key="section.name"
-        class="my-6"
+        class="relative my-6"
       >
         <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
         <a
           :id="section.name.toLowerCase()"
           aria-hidden="true"
-          class="relative top--25 sm:top--15"
+          class="absolute top--25 w-1 sm:top--15 target:pb-100vh"
         />
         <h2 :class="['text-6', index === 0 && 'sr-only']">
           {{ section.name }}
@@ -56,7 +56,7 @@
       </section>
     </main>
     <footer class="b-t-1 print:hidden dark:b-gray-4">
-      <div class="mt-4 flex justify-center gap-2 text-sm text-gray-8 dark:text-gray-3">
+      <div class="my-4 flex justify-center gap-2 text-sm text-gray-8 dark:text-gray-3">
         <a
           href="https://github.com/ouuan/homepage"
           class="underline"
@@ -209,14 +209,6 @@ header {
   @apply sticky top-0 z-1;
   @apply 'bg-white shadow-gray-2 shadow-[0_4px_2px_-3px]';
   @apply 'dark:bg-dark-6 dark:shadow-none dark:b-b-1 dark:b-gray-4'
-}
-
-footer {
-  margin-bottom: calc(100vh - 7.25rem);
-
-  @screen sm {
-    margin-bottom: calc(100vh - 4.75rem);
-  }
 }
 
 .markdown-body {
