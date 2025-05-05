@@ -5,15 +5,19 @@
       <div>
         <ul class="mt-4 flex flex-wrap">
           <li
-            v-for="social of SOCIALS"
+            v-for="(social, index) of SOCIALS"
             :key="social.name"
-            class="after:mx-2 after:content-['/'] last:after:content-none"
           >
             <a
               :href="social.url"
               rel="me"
               class="link"
             >{{ social.name }}</a>
+            <span
+              v-if="index < SOCIALS.length - 1"
+              aria-hidden="true"
+              class="mx-2 after:content-['/']"
+            />
           </li>
         </ul>
       </div>

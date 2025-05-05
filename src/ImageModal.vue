@@ -1,25 +1,13 @@
 <template>
   <details class="group mx-auto max-w-full shrink-0">
     <summary class="h-full flex cursor-zoom-in group-open:cursor-zoom-out">
-      <img
-        v-bind="{ ...image, type: undefined, sizes }"
-        :alt="alt"
-        :title="alt"
-        :class="imageClass"
-        :style="imageStyle"
-      >
       <span
         class="image-modal"
         role="dialog"
         aria-modal="true"
-        :title="`${alt.replace(/\.$/, '')}.\nClick anywhere to exit.`"
+        aria-label="Enlarged image. Click to close."
+        :title="`${alt.replace(/\.$/, '')}.\nClick anywhere to close.`"
       >
-        <span
-          class="absolute right-0 top-0 w-15 cursor-pointer text-center text-10"
-          aria-label="Click to close"
-        >
-          ×
-        </span>
         <img
           :src="image.src"
           :height="image.height"
@@ -28,7 +16,19 @@
           :alt="alt"
           class="h-auto max-h-90vh w-auto sm:max-w-90vw"
         >
+        <span
+          class="absolute right-0 top-0 w-15 cursor-pointer text-center text-10"
+          aria-hidden="true"
+        >×</span>
+        <span class="sr-only">Click to close</span>
       </span>
+      <img
+        v-bind="{ ...image, type: undefined, sizes }"
+        :alt="alt"
+        :title="alt"
+        :class="imageClass"
+        :style="imageStyle"
+      >
     </summary>
   </details>
 </template>

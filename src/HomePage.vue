@@ -61,7 +61,7 @@
           href="https://github.com/ouuan/homepage"
           class="underline"
         >Page Source Code</a>
-        <span class="after-content-['·']" />
+        <span aria-hidden="true">·</span>
         <span>Designed by Yufan You</span>
       </div>
     </footer>

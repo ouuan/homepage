@@ -25,7 +25,10 @@
                   >*</span>
                   <span class="sr-only">(equal contribution)</span>
                 </template>
-                <span v-if="index < conf.authors.length - 1">, </span>
+                <span
+                  v-if="index < conf.authors.length - 1"
+                  aria-hidden="true"
+                >, </span>
               </li>
             </ol>
           </div>
