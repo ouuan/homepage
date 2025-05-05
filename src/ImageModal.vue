@@ -1,5 +1,5 @@
 <template>
-  <details class="group mx-auto max-w-full shrink-0">
+  <details class="group mx-auto max-w-full shrink-0 break-inside-avoid">
     <summary class="h-full flex cursor-zoom-in group-open:cursor-zoom-out">
       <span
         class="image-modal"

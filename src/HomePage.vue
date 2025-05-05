@@ -3,7 +3,7 @@
     class="mx-auto max-w-220"
     :style="`padding: 0 ${PAGE_PADDING}rem;`"
   >
-    <header class="flex flex-wrap justify-center sm:justify-between">
+    <header class="flex flex-wrap justify-center print:hidden sm:justify-between">
       <div class="w-full shrink-0 text-center font-italic sm:w-auto">
         <a
           class="block p-2 btn-status"
@@ -55,7 +55,7 @@
         />
       </section>
     </main>
-    <footer class="b-t-1 dark:b-gray-4">
+    <footer class="b-t-1 print:hidden dark:b-gray-4">
       <div class="mt-4 flex justify-center gap-2 text-sm text-gray-8 dark:text-gray-3">
         <a
           href="https://github.com/ouuan/homepage"
