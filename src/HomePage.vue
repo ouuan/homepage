@@ -76,12 +76,12 @@ import fontBoldNormal from '../fonts/NotoSerif/NotoSerif-latin-bold-normal.woff2
 import fontRegularItalic from '../fonts/NotoSerif/NotoSerif-latin-regular-italic.woff2';
 import fontRegularNormal from '../fonts/NotoSerif/NotoSerif-latin-regular-normal.woff2';
 import AboutSection from './AboutSection.vue';
+import AwardSection from './AwardSection.vue';
 import ListSection from './ListSection.vue';
 import ProjectSection from './ProjectSection.vue';
 import PublicationSection from './PublicationSection.vue';
 import {
   ADDITIONAL_HEAD,
-  AWARDS,
   CHINESE_NAME,
   DESCRIPTION,
   NAME,
@@ -107,8 +107,7 @@ const SECTIONS = [
   },
   {
     name: 'Awards',
-    component: ListSection,
-    props: { list: AWARDS },
+    component: AwardSection,
   },
   {
     name: 'Services',

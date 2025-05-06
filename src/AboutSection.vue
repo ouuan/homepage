@@ -69,7 +69,7 @@ useSchemaOrg([
     image: photoSchema as any, // not sure why the typecheck here is extremely slow
     alternateName: CHINESE_NAME,
     sameAs: SOCIALS.filter((social) => social.sameAs).map((social) => social.url),
-    award: AWARDS.map((award) => award.title),
+    award: Object.values(AWARDS).flatMap((awards) => awards.map((award) => award.title)),
   }),
 ]);
 </script>
