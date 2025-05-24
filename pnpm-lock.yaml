@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@unhead/schema-org':
-        specifier: 2.0.8
-        version: 2.0.8(@unhead/vue@2.0.8(vue@3.5.14(typescript@5.8.3)))
+        specifier: 2.0.10
+        version: 2.0.10(@unhead/vue@2.0.10(vue@3.5.14(typescript@5.8.3)))
       '@unhead/vue':
-        specifier: 2.0.8
-        version: 2.0.8(vue@3.5.14(typescript@5.8.3))
+        specifier: 2.0.10
+        version: 2.0.10(vue@3.5.14(typescript@5.8.3))
       '@unocss/reset':
         specifier: 66.1.1
         version: 66.1.1
@@ -71,7 +71,7 @@ importers:
         version: 0.3.4
       vite-ssg:
         specifier: 26.1.1
-        version: 26.1.1(unhead@2.0.8)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(sass-embedded@1.88.0)(terser@5.39.2))(vue@3.5.14(typescript@5.8.3))
+        version: 26.1.1(unhead@2.0.10)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(sass-embedded@1.88.0)(terser@5.39.2))(vue@3.5.14(typescript@5.8.3))
       vue-tsc:
         specifier: 2.2.10
         version: 2.2.10(typescript@5.8.3)
@@ -629,13 +629,13 @@ packages:
     peerDependencies:
       unhead: 2.0.9
 
-  '@unhead/schema-org@2.0.8':
-    resolution: {integrity: sha512-AR2xdPggAQA+9+qWDw/jM8tMWXASVVCyHNi1vVd+q7qMRs87P6jt05dZ5z5JmutUoUE+mFfGYXisRnjv3y8jTA==}
+  '@unhead/schema-org@2.0.10':
+    resolution: {integrity: sha512-hg4hM1ntXP1Lk/ybzTjCaxGRLQDlyatR8H42nbSsOeXo3qXGVGLwSKJr0od4t7IvmXKMqzm3WOTv8h6nPZgiVw==}
     peerDependencies:
-      '@unhead/react': 2.0.8
-      '@unhead/solid-js': 2.0.8
-      '@unhead/svelte': 2.0.8
-      '@unhead/vue': 2.0.8
+      '@unhead/react': 2.0.10
+      '@unhead/solid-js': 2.0.10
+      '@unhead/svelte': 2.0.10
+      '@unhead/vue': 2.0.10
     peerDependenciesMeta:
       '@unhead/react':
         optional: true
@@ -646,8 +646,8 @@ packages:
       '@unhead/vue':
         optional: true
 
-  '@unhead/vue@2.0.8':
-    resolution: {integrity: sha512-e30+CfCl1avR+hzFtpvnBSesZ5TN2KbShStdT2Z+zs5WIBUvobQwVxSR0arX43To6KfwtCXAfi0iOOIH0kufHQ==}
+  '@unhead/vue@2.0.10':
+    resolution: {integrity: sha512-lV7E1sXX6/te8+IiUwlMysBAyJT/WM5Je47cRnpU5hsvDRziSIGfim9qMWbsTouH+paavRJz1i8gk5hRzjvkcw==}
     peerDependencies:
       vue: '>=3.5.13'
 
@@ -2581,8 +2581,8 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
-  unhead@2.0.8:
-    resolution: {integrity: sha512-63WR+y08RZE7ChiFdgNY64haAkhCtUS5/HM7xo4Q83NA63txWbEh2WGmrKbArdQmSct+XlqbFN8ZL1yWpQEHEA==}
+  unhead@2.0.10:
+    resolution: {integrity: sha512-GT188rzTCeSKt55tYyQlHHKfUTtZvgubrXiwzGeXg6UjcKO3FsagaMzQp6TVDrpDY++3i7Qt0t3pnCc/ebg5yQ==}
 
   unocss@66.1.1:
     resolution: {integrity: sha512-GD/y7AsvbO6bG9Zu+5xf6UNIPyIwOUffTqLgFaWXHOqO6xXpbH9SWz2B+ATMdjwsRGr/JJHn3pLFo8lHGsHKsQ==}
@@ -3315,23 +3315,23 @@ snapshots:
       '@typescript-eslint/types': 8.32.1
       eslint-visitor-keys: 4.2.0
 
-  '@unhead/dom@2.0.9(unhead@2.0.8)':
+  '@unhead/dom@2.0.9(unhead@2.0.10)':
     dependencies:
-      unhead: 2.0.8
+      unhead: 2.0.10
 
-  '@unhead/schema-org@2.0.8(@unhead/vue@2.0.8(vue@3.5.14(typescript@5.8.3)))':
+  '@unhead/schema-org@2.0.10(@unhead/vue@2.0.10(vue@3.5.14(typescript@5.8.3)))':
     dependencies:
       defu: 6.1.4
       ohash: 2.0.11
       ufo: 1.6.1
-      unhead: 2.0.8
+      unhead: 2.0.10
     optionalDependencies:
-      '@unhead/vue': 2.0.8(vue@3.5.14(typescript@5.8.3))
+      '@unhead/vue': 2.0.10(vue@3.5.14(typescript@5.8.3))
 
-  '@unhead/vue@2.0.8(vue@3.5.14(typescript@5.8.3))':
+  '@unhead/vue@2.0.10(vue@3.5.14(typescript@5.8.3))':
     dependencies:
       hookable: 5.5.3
-      unhead: 2.0.8
+      unhead: 2.0.10
       vue: 3.5.14(typescript@5.8.3)
 
   '@unocss/astro@66.1.1(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(sass-embedded@1.88.0)(terser@5.39.2))(vue@3.5.14(typescript@5.8.3))':
@@ -5637,7 +5637,7 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  unhead@2.0.8:
+  unhead@2.0.10:
     dependencies:
       hookable: 5.5.3
 
@@ -5713,10 +5713,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-ssg@26.1.1(unhead@2.0.8)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(sass-embedded@1.88.0)(terser@5.39.2))(vue@3.5.14(typescript@5.8.3)):
+  vite-ssg@26.1.1(unhead@2.0.10)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(sass-embedded@1.88.0)(terser@5.39.2))(vue@3.5.14(typescript@5.8.3)):
     dependencies:
-      '@unhead/dom': 2.0.9(unhead@2.0.8)
-      '@unhead/vue': 2.0.8(vue@3.5.14(typescript@5.8.3))
+      '@unhead/dom': 2.0.9(unhead@2.0.10)
+      '@unhead/vue': 2.0.10(vue@3.5.14(typescript@5.8.3))
       ansis: 3.17.0
       cac: 6.7.14
       html-minifier-terser: 7.2.0
