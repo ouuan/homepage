@@ -1,5 +1,5 @@
 <template>
-  <details class="group mx-auto max-w-full shrink-0 break-inside-avoid">
+  <details class="image-details group mx-auto max-w-full shrink-0 break-inside-avoid">
     <summary class="h-full flex cursor-zoom-in group-open:cursor-zoom-out">
       <span
         class="image-modal"
@@ -47,5 +47,9 @@ defineProps<{
 .image-modal {
   @apply hidden group-open:flex justify-center items-center;
   @apply fixed z-10 inset-0 bg-#888d;
+}
+
+body:has(.image-details[open]) {
+  overflow: hidden;
 }
 </style>
