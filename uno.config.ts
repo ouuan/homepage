@@ -1,7 +1,7 @@
 import {
   defineConfig,
   presetIcons,
-  presetWind3, // https://github.com/unocss/unocss/issues/4568
+  presetWind4,
   transformerDirectives,
 } from 'unocss';
 import { BREAKPOINTS } from './src/constants';
@@ -9,34 +9,28 @@ import { BREAKPOINTS } from './src/constants';
 export default defineConfig({
   presets: [
     presetIcons(),
-    presetWind3({ dark: 'media' }),
+    presetWind4({
+      dark: 'media',
+      preflights: { reset: false },
+    }),
   ],
   transformers: [
     transformerDirectives(),
   ],
   theme: {
-    breakpoints: BREAKPOINTS,
+    breakpoint: BREAKPOINTS,
   },
-  rules: [
-    [
-      // TODO: this is included in presetWind4
-      /^scheme-(light|dark)$/,
-      ([, scheme]) => (scheme && {
-        'color-scheme': scheme,
-      }),
-    ],
-  ],
   shortcuts: {
-    'btn-outline': 'b-1 b-black dark:b-gray-2 rd-1 px-1 py-0.5 text-sm',
+    'btn-outline': 'b-1 b-black dark:b-gray-200 rd-1 px-1 py-0.5 text-sm',
     'btn-status': [
       'cursor-pointer',
-      'hover:bg-gray-1 active:bg-gray-2',
-      'dark:hover:bg-dark-8 dark:active:bg-dark-9',
+      'hover:bg-gray-100 active:bg-gray-200',
+      'dark:hover:bg-dark-800 dark:active:bg-dark-900',
     ],
     'btn': 'btn-outline btn-status',
     'link': [
-      'text-blue-6 hover:text-blue-7 active:text-blue-9',
-      'dark:text-blue-4 dark:hover:text-blue-5 dark:active:text-blue-6',
+      'text-blue-600 hover:text-blue-700 active:text-blue-900',
+      'dark:text-blue-400 dark:hover:text-blue-500 dark:active:text-blue-600',
       'hover:underline contrast-more:underline',
     ],
   },

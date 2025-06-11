@@ -5,13 +5,13 @@
       :key="item.title"
       class="my-1 ml-4"
     >
-      <div class="flex items-baseline justify-between gap-x-4 md:gap-x-6">
+      <div class="flex gap-x-4 items-baseline justify-between md:gap-x-6">
         <div>
           <!-- eslint-disable-next-line vue/no-v-html -->
           <span v-html="itemHtml(item)" />
           <span
             v-if="item.note"
-            class="ml-3 text-sm"
+            class="text-sm ml-3"
           >({{ item.note }})</span>
         </div>
         <div class="text-right">

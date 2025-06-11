@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap-reverse items-center justify-between gap-4 sm:flex-nowrap">
+  <div class="flex flex-wrap-reverse gap-4 items-center justify-between sm:flex-nowrap">
     <div>
       <about-content />
       <div>

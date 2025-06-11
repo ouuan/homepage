@@ -33,7 +33,7 @@
                   class="shrink-0 btn"
                 >{{ display }}</a>
               </template>
-              <div class="flex-grow text-right">
+              <div class="text-right flex-grow">
                 {{ project.time }}
               </div>
             </div>
@@ -98,6 +98,6 @@ useSchemaOrg(PROJECTS.map<CreativeWork>((project) => {
 
 <style>
 .project-img {
-  @apply b-1 dark:b-dark-5 dark:brightness-80;
+  @apply b-1 dark:b-dark-500 dark:brightness-80;
 }
 </style>
