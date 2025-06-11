@@ -4,7 +4,7 @@
       v-for="conf of CONFERENCES"
       :key="conf.title"
     >
-      <section class="my-4 flex flex-wrap-reverse justify-between gap-x-4 sm:flex-nowrap">
+      <section class="my-4 flex flex-wrap-reverse gap-x-4 justify-between sm:flex-nowrap">
         <div>
           <h3 class="font-bold">
             {{ conf.title }}
@@ -38,7 +38,7 @@
           <div class="my-2">
             <component :is="conf.description" />
           </div>
-          <div class="mt-1 flex flex-wrap items-start gap-2 md:flex-nowrap">
+          <div class="mt-1 flex flex-wrap gap-2 items-start md:flex-nowrap">
             <span
               v-if="!conf.url && !conf.pdf"
               class="shrink-0 btn-outline"
@@ -58,14 +58,14 @@
               class="group btn-outline"
               style="padding: 0;"
             >
-              <summary class="rd-1 px-1 py-0.5 group-open:pb-1 btn-status">
+              <summary class="px-1 py-0.5 rd-1 group-open:pb-1 btn-status">
                 <span>BibTeX</span>
               </summary>
-              <pre class="whitespace-pre-wrap b-t-1 p-3 dark:b-dark-2">{{ bibtex(conf) }}</pre>
+              <pre class="p-3 b-t-1 whitespace-pre-wrap dark:b-dark-200">{{ bibtex(conf) }}</pre>
             </details>
           </div>
         </div>
-        <div class="shrink-0 text-balance sm:max-w-32 sm:text-right">
+        <div class="shrink-0 text-balance sm:text-right sm:max-w-32">
           <div>
             <a
               class="font-bold"
@@ -75,7 +75,7 @@
           <div>
             <a
               v-if="conf.award"
-              class="text-red-7 font-bold dark:text-red-5"
+              class="text-red-700 font-bold dark:text-red-500"
               :href="conf.awardUrl"
             >{{ conf.award }}</a>
           </div>

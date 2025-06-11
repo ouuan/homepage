@@ -4,9 +4,9 @@
     :style="`padding: 0 ${PAGE_PADDING}rem;`"
   >
     <header class="flex flex-wrap justify-center print:hidden sm:justify-between">
-      <div class="w-full shrink-0 text-center font-italic sm:w-auto">
+      <div class="text-center shrink-0 w-full font-italic sm:w-auto">
         <a
-          class="block p-2 btn-status"
+          class="p-2 block btn-status"
           href="#"
         >{{ NAME }}</a>
       </div>
@@ -18,7 +18,7 @@
           >
             <a
               :href="`#${name.toLowerCase()}`"
-              class="block p-2 btn-status"
+              class="p-2 block btn-status"
             >
               <div v-if="abbr">
                 <span class="hidden xs:inline">{{ name }}</span>
@@ -31,20 +31,20 @@
       </nav>
     </header>
     <main>
-      <h1 class="mx-auto my-6 flex items-baseline justify-center gap-x-4 text-8">
+      <h1 class="text-8 mx-auto my-6 flex gap-x-4 items-baseline justify-center">
         <span>{{ NAME }}</span>
-        <span class="font-chinese relative top--0.1">{{ CHINESE_NAME }}</span>
+        <span class="font-chinese top--0.1 relative">{{ CHINESE_NAME }}</span>
       </h1>
       <section
         v-for="(section, index) of SECTIONS"
         :key="section.name"
-        class="relative my-6"
+        class="my-6 relative"
       >
         <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
         <a
           :id="section.name.toLowerCase()"
           aria-hidden="true"
-          class="absolute top--25 w-1 sm:top--15 target:pb-100vh"
+          class="w-1 top--25 absolute target:pb-100vh sm:top--15"
         />
         <h2 :class="['text-6', index === 0 && 'sr-only']">
           {{ section.name }}
@@ -55,8 +55,8 @@
         />
       </section>
     </main>
-    <footer class="b-t-1 print:hidden dark:b-gray-4">
-      <div class="my-4 flex justify-center gap-2 text-sm text-gray-8 dark:text-gray-3">
+    <footer class="b-t-1 dark:b-gray-400 print:hidden">
+      <div class="text-sm text-gray-800 my-4 flex gap-2 justify-center dark:text-gray-300">
         <a
           href="https://github.com/ouuan/homepage"
           class="underline"
@@ -206,8 +206,8 @@ useHead(ADDITIONAL_HEAD);
 
 header {
   @apply sticky top-0 z-1;
-  @apply 'bg-white shadow-gray-2 shadow-[0_4px_2px_-3px]';
-  @apply 'dark:bg-dark-6 dark:shadow-none dark:b-b-1 dark:b-gray-4'
+  @apply 'bg-white shadow-gray-200 shadow-[0_4px_2px_-3px]';
+  @apply 'dark:bg-dark-600 dark:shadow-none dark:b-b-1 dark:b-gray-400'
 }
 
 .markdown-body {
