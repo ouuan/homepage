@@ -42,5 +42,6 @@ export const CONFERENCES: Conference[] = [
     date: new Date('2025-08-13'),
     address: 'Seattle, WA',
     publisher: 'USENIX Association',
+    code: 'https://github.com/ouuan/ZipDiff',
   },
 ];
