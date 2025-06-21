@@ -16,7 +16,7 @@
     "@unhead/vue": "2.0.10",
     "@unocss/reset": "66.2.3",
     "schema-dts": "1.1.5",
-    "vue": "3.5.16"
+    "vue": "3.5.17"
   },
   "devDependencies": {
     "@ouuan/eslint-config-vue": "2.1.0",
