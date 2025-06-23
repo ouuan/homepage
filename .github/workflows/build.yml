@@ -23,6 +23,7 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm build
+      - run: rm -rf dist/.vite
       - uses: JamesIves/github-pages-deploy-action@v4
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         with:
