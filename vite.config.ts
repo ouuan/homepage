@@ -1,5 +1,6 @@
 import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue';
+import git from 'simple-git';
 import unocss from 'unocss/vite';
 import markdown from 'unplugin-vue-markdown/vite';
 import { defineConfig } from 'vite';
@@ -61,6 +62,14 @@ export default defineConfig({
       fontName: 'ChineseName',
       fontFamily: 'Chinese Name Font',
     }),
+    {
+      name: 'last updated',
+      async config() {
+        const logs = await git().log();
+        const commit = logs.all.find((commit) => commit.message.startsWith('content'));
+        return { define: { __LAST_UPDATED__: JSON.stringify(commit?.date ?? null) } };
+      },
+    },
     {
       name: 'noscript',
       apply: 'build',

@@ -55,14 +55,27 @@
         />
       </section>
     </main>
-    <footer class="b-t-1 dark:b-gray-400 print:hidden">
-      <div class="text-sm text-gray-800 my-4 flex gap-2 justify-center dark:text-gray-300">
+    <footer class="text-sm text-gray-800 b-t-1 dark:text-gray-300 dark:b-gray-400 print:hidden">
+      <div class="my-4 flex flex-wrap gap-2 justify-center">
         <a
           href="https://github.com/ouuan/homepage"
           class="underline"
         >Page Source Code</a>
         <span aria-hidden="true">·</span>
         <span>Designed by Yufan You</span>
+        <template v-if="UPDATED">
+          <span
+            aria-hidden="true"
+            class="hidden sm:block"
+          >·</span>
+          <span class="text-center basis-full sm:basis-auto">
+            Last updated on
+            <time
+              :datetime="UPDATED"
+              :title="UPDATED"
+            >{{ UPDATED.slice(0, 10) }}</time>
+          </span>
+        </template>
       </div>
     </footer>
   </div>
@@ -187,6 +200,8 @@ useSchemaOrg([
 ]);
 
 useHead(ADDITIONAL_HEAD);
+
+const UPDATED = __LAST_UPDATED__;
 </script>
 
 <style>

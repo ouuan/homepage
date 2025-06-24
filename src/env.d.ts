@@ -21,3 +21,5 @@ declare module '*?preset=project' {
   const image: [ImageAttrs];
   export default image;
 }
+
+declare const __LAST_UPDATED__: string | null;
