@@ -6,7 +6,7 @@
     <header class="flex flex-wrap justify-center print:hidden sm:justify-between">
       <div class="text-center shrink-0 w-full font-italic sm:w-auto">
         <a
-          class="p-2 block btn-status"
+          class="p-2 btn-status block"
           href="#"
         >{{ NAME }}</a>
       </div>
@@ -18,7 +18,7 @@
           >
             <a
               :href="`#${name.toLowerCase()}`"
-              class="p-2 block btn-status"
+              class="p-2 btn-status block"
             >
               <div v-if="abbr">
                 <span class="hidden xs:inline">{{ name }}</span>

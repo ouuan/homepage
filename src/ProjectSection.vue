@@ -30,7 +30,7 @@
                 <a
                   v-if="project[key]"
                   :href="project[key]"
-                  class="shrink-0 btn"
+                  class="btn shrink-0"
                 >{{ display }}</a>
               </template>
               <div class="text-right flex-grow">

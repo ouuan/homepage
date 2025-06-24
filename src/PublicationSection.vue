@@ -41,7 +41,7 @@
           <div class="mt-1 flex flex-wrap gap-2 items-start md:flex-nowrap">
             <span
               v-if="!conf.url && !conf.pdf"
-              class="shrink-0 btn-outline"
+              class="btn-outline shrink-0"
               title="The submission has been accepted, but the final paper is not yet available"
             >To appear</span>
             <template
@@ -51,14 +51,14 @@
               <a
                 v-if="conf[key]"
                 :href="conf[key]"
-                class="shrink-0 btn"
+                class="btn shrink-0"
               >{{ display }}</a>
             </template>
             <details
               class="group btn-outline"
               style="padding: 0;"
             >
-              <summary class="px-1 py-0.5 rd-1 group-open:pb-1 btn-status">
+              <summary class="px-1 py-0.5 rd-1 btn-status group-open:pb-1">
                 <span>BibTeX</span>
               </summary>
               <pre class="p-3 b-t-1 whitespace-pre-wrap dark:b-dark-200">{{ bibtex(conf) }}</pre>
