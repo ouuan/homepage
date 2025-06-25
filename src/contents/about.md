@@ -2,4 +2,4 @@ My name is Yufan You (pronounced “Yoo-fahn Yoh”). I am a master's student at
 
 My research focuses on **Network, Protocol, and Web Security**. I am particularly interested in identifying and mitigating vulnerabilities arising from parser differentials and semantic gaps between protocol implementations.
 
-Besides network security research, I also enjoy solving CTF challenges, Web development (e.g., the page you are visiting), and programming in Rust with Neovim on Arch Linux.
+I am also a Web and misc CTF player in Redbud / blue-lotus / Blue Water. I write code with Neovim on Arch Linux.
