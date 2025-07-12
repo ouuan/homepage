@@ -12,8 +12,8 @@
   },
   "license": "AGPL-3.0-or-later",
   "dependencies": {
-    "@unhead/schema-org": "2.0.10",
-    "@unhead/vue": "2.0.10",
+    "@unhead/schema-org": "2.0.12",
+    "@unhead/vue": "2.0.12",
     "@unocss/reset": "66.2.3",
     "schema-dts": "1.1.5",
     "vue": "3.5.17"
