@@ -18,6 +18,7 @@ export interface Conference {
   pdf?: string;
   slides?: string;
   talk?: string;
+  poster?: string;
   code?: string;
   doi?: string;
   isbn?: string;

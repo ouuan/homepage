@@ -96,6 +96,7 @@ const CONFERENCE_ITEMS = [
   ['pdf', 'PDF'],
   ['slides', 'Slides'],
   ['talk', 'Talk'],
+  ['poster', 'Poster'],
   ['code', 'Code'],
 ] as const;
 
