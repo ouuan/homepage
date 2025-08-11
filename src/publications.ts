@@ -45,6 +45,7 @@ export const CONFERENCES: Conference[] = [
     publisher: 'USENIX Association',
     url: 'https://www.usenix.org/conference/usenixsecurity25/presentation/you',
     pdf: 'https://www.usenix.org/system/files/usenixsecurity25-you.pdf',
+    poster: '/files/usenixsecurity25-you-poster.pdf',
     code: 'https://github.com/ouuan/ZipDiff',
     isbn: '978-1-939133-52-6',
   },
