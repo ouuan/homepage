@@ -66,9 +66,15 @@ export const AWARDS: Record<string, ListItem[]> = {
   ],
   Competitions: [
     {
+      title: 'Second Place in DEF CON CTF 33',
+      bold: ['Second Place', 'DEF CON CTF 33'],
+      note: 'team member of Blue Water',
+      time: '2025',
+    },
+    {
       title: 'Third Place in SECCON CTF 13 International Finals',
       bold: ['Third Place', 'SECCON CTF 13'],
-      note: 'team member',
+      note: 'team member of blue-lotus',
       time: '2025',
     },
     {
