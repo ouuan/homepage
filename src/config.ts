@@ -52,7 +52,15 @@ export interface ListItem {
 }
 
 export const AWARDS: Record<string, ListItem[]> = {
-  Academic: [
+  'Paper Awards': [
+    {
+      title: 'Distinguished Paper Award, USENIX Security 2025',
+      bold: ['Distinguished Paper Award'],
+      note: 'first author, 8 awards out of 407 accepted papers',
+      time: '2025',
+    },
+  ],
+  'Scholarships': [
     {
       title: 'Scholarship for Science and Technology Innovation Excellence, Tsinghua University',
       bold: ['Science and Technology Innovation Excellence'],
@@ -64,7 +72,7 @@ export const AWARDS: Record<string, ListItem[]> = {
       time: '2023',
     },
   ],
-  Competitions: [
+  'Competitions': [
     {
       title: 'Second Place in DEF CON CTF 33',
       bold: ['Second Place', 'DEF CON CTF 33'],

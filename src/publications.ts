@@ -47,6 +47,7 @@ export const CONFERENCES: Conference[] = [
     pdf: 'https://www.usenix.org/system/files/usenixsecurity25-you.pdf',
     poster: '/files/usenixsecurity25-you-poster.pdf',
     code: 'https://github.com/ouuan/ZipDiff',
+    award: 'Distinguished Paper Award',
     isbn: '978-1-939133-52-6',
   },
 ];
