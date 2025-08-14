@@ -28,6 +28,11 @@ export const SOCIALS: Social[] = [
     sameAs: true,
   },
   {
+    name: 'Google Scholar',
+    url: 'https://scholar.google.com/citations?user=Hs9aAgIAAAAJ',
+    sameAs: true,
+  },
+  {
     name: 'ORCID',
     url: 'https://orcid.org/0009-0004-2975-2107',
     sameAs: true,
