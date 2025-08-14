@@ -3,7 +3,7 @@
     <div>
       <about-content />
       <div>
-        <ul class="mt-4 flex flex-wrap">
+        <ul class="mt-4 flex flex-wrap justify-center">
           <li
             v-for="(social, index) of SOCIALS"
             :key="social.name"
