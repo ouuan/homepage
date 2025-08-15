@@ -120,6 +120,12 @@ export const AWARDS: Record<string, ListItem[]> = {
 
 export const SERVICES: ListItem[] = [
   {
+    title: 'Teaching Assistant of Programing and Training',
+    bold: ['Programing and Training'],
+    time: 'Summer 2025',
+    note: 'Guide students to learn Rust & build projects',
+  },
+  {
     title: 'Teaching Assistant of Digital Logic Design',
     bold: ['Digital Logic Design'],
     time: 'Spring 2025',
