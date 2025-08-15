@@ -194,14 +194,14 @@ useHead({
   ],
 });
 
+const UPDATED = __LAST_UPDATED__;
+
 useSchemaOrg([
-  defineWebSite(),
-  defineWebPage(),
+  defineWebSite({ dateModified: UPDATED }),
+  defineWebPage({ dateModified: UPDATED }),
 ]);
 
 useHead(ADDITIONAL_HEAD);
-
-const UPDATED = __LAST_UPDATED__;
 </script>
 
 <style>
