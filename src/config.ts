@@ -20,7 +20,7 @@ export interface Social {
 export const SOCIALS: Social[] = [
   {
     name: 'Email',
-    url: 'mailto:ouuansteve@gmail.com',
+    url: 'mailto:youyf21@mails.tsinghua.edu.cn',
   },
   {
     name: 'GitHub',
