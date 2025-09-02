@@ -32,7 +32,7 @@ export interface Conference {
   equalContribution?: number;
   submissionCount?: number;
   acceptedCount?: number;
-  awards?: [PaperAward];
+  awards?: PaperAward[];
 }
 
 // helpers to prevent duplicates and typos
