@@ -35,10 +35,10 @@
           <div class="font-italic">
             {{ conf.confFull }}
           </div>
-          <div class="my-2">
+          <div class="mt-1">
             <component :is="conf.description" />
           </div>
-          <div class="mt-1 flex flex-wrap gap-2 items-start">
+          <div class="mt-2 flex flex-wrap gap-2 items-start">
             <span
               v-if="!conf.url && !conf.pdf"
               class="btn-outline shrink-0"
@@ -74,13 +74,31 @@
               :href="conf.confUrl"
             >{{ conf.confAbbr }}</a>
           </div>
-          <div>
-            <a
-              v-if="conf.award"
-              class="text-red-700 font-bold dark:text-red-500"
-              :href="conf.awardUrl"
-            >{{ conf.award }}</a>
+          <div
+            v-if="conf.submissionCount && conf.acceptedCount"
+            class="text-sm"
+            :title="`${conf.acceptedCount} accepted out of ${conf.submissionCount} submissions`"
+          >
+            ({{ calcRate(conf.acceptedCount, conf.submissionCount) }})
           </div>
+          <template
+            v-for="award of conf.awards"
+            :key="award.name"
+          >
+            <div class="mt-1">
+              <a
+                class="text-red-700 font-bold dark:text-red-500"
+                :href="award.url"
+              >{{ award.name }}</a>
+            </div>
+            <div
+              v-if="award.total && conf.acceptedCount"
+              class="text-red-700 dark:text-red-500"
+              :title="`${award.total} awards out of ${conf.acceptedCount} accepted papers`"
+            >
+              ({{ calcRate(award.total, conf.acceptedCount) }})
+            </div>
+          </template>
         </div>
       </section>
     </li>
@@ -127,6 +145,11 @@ function bibtex(conf: Conference) {
 }`;
 }
 
+function calcRate(target: number, total: number) {
+  const rate = (target / total * 100).toFixed(1).replace(/\.?0+$/, '');
+  return `${rate}% = ${target}/${total}`;
+}
+
 useSchemaOrg(CONFERENCES.map<ScholarlyArticle>((conf) => ({
   '@type': 'ScholarlyArticle',
   'name': conf.title,
@@ -153,6 +176,7 @@ useSchemaOrg(CONFERENCES.map<ScholarlyArticle>((conf) => ({
     conf.talk,
     conf.code,
   ].filter(Boolean),
+  'award': conf.awards?.map((award) => award.name),
   ...((conf.doi && {
     identifier: {
       '@type': 'PropertyValue',
@@ -166,6 +190,5 @@ useSchemaOrg(CONFERENCES.map<ScholarlyArticle>((conf) => ({
       'value': conf.isbn,
     },
   })),
-  ...(conf.award ? { award: conf.award } : {}),
 })));
 </script>

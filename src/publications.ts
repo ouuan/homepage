@@ -4,6 +4,12 @@ import type { ComponentOptions } from 'vue';
 import { NAME } from './config';
 import zipDescription from './contents/zip.md';
 
+export interface PaperAward {
+  name: string;
+  url?: string;
+  total?: number;
+}
+
 export interface Conference {
   title: string;
   authors: string[];
@@ -23,9 +29,10 @@ export interface Conference {
   code?: string;
   doi?: string;
   isbn?: string;
-  award?: string;
-  awardUrl?: string;
   equalContribution?: number;
+  submissionCount?: number;
+  acceptedCount?: number;
+  awards?: [PaperAward];
 }
 
 // helpers to prevent duplicates and typos
