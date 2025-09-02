@@ -175,8 +175,10 @@ useSchemaOrg(CONFERENCES.map<ScholarlyArticle>((conf) => ({
   'url': conf.url,
   'sameAs': [
     conf.pdf,
+    conf.scholar,
     conf.slides,
     conf.talk,
+    conf.poster,
     conf.code,
   ].filter(Boolean),
   'award': conf.awards?.map((award) => award.name),
