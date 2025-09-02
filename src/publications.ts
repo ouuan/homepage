@@ -56,7 +56,12 @@ export const CONFERENCES: Conference[] = [
     scholar: 'https://scholar.google.com/citations?view_op=view_citation&citation_for_view=Hs9aAgIAAAAJ:u5HHmVD_uO8C',
     poster: '/files/usenixsecurity25-you-poster.pdf',
     code: 'https://github.com/ouuan/ZipDiff',
-    award: 'Distinguished Paper Award',
     isbn: '978-1-939133-52-6',
+    submissionCount: 2385,
+    acceptedCount: 407,
+    awards: [{
+      name: 'Distinguished Paper Award',
+      total: 8,
+    }],
   },
 ];

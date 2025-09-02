@@ -62,7 +62,7 @@ export const AWARDS: Record<string, ListItem[]> = {
     {
       title: 'Distinguished Paper Award, USENIX Security 2025',
       bold: ['Distinguished Paper Award'],
-      note: 'first author, 8 awards out of 407 accepted papers',
+      note: 'first author',
       time: '2025',
     },
   ],
