@@ -33,7 +33,10 @@
             </ol>
           </div>
           <div class="font-italic">
-            {{ conf.confFull }}
+            {{ conf.confFull }}, {{ conf.date.toLocaleString('en-US', {
+              month: 'long',
+              year: 'numeric',
+            }) }}
           </div>
           <div class="mt-1">
             <component :is="conf.description" />
