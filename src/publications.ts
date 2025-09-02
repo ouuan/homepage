@@ -1,7 +1,7 @@
 // separate file because Markdown/images can only be imported from Vue, not from TS
 
 import type { ComponentOptions } from 'vue';
-import { NAME } from './config';
+import { NAME, SITE_URL } from './config';
 import zipDescription from './contents/zip.md';
 
 export interface PaperAward {
@@ -10,9 +10,14 @@ export interface PaperAward {
   total?: number;
 }
 
+export interface Author {
+  name: string;
+  url?: string;
+}
+
 export interface Conference {
   title: string;
-  authors: string[];
+  authors: Author[];
   description: ComponentOptions;
   confAbbr: string;
   confFull: string;
@@ -35,15 +40,28 @@ export interface Conference {
   awards?: PaperAward[];
 }
 
-// helpers to prevent duplicates and typos
-const cjj = 'Jianjun Chen';
-const dhx = 'Haixin Duan';
-const wq = 'Qi Wang';
+const me = {
+  name: NAME,
+  url: SITE_URL,
+};
+
+const cjj = {
+  name: 'Jianjun Chen',
+  url: 'https://www.jianjunchen.com/',
+};
+const dhx = {
+  name: 'Haixin Duan',
+  url: 'https://netsec.ccert.edu.cn/duanhx',
+};
+const wq = {
+  name: 'Qi Wang',
+  url: 'https://eki.im/',
+};
 
 export const CONFERENCES: Conference[] = [
   {
     title: 'My ZIP isn’t your ZIP: Identifying and Exploiting Semantic Gaps Between ZIP Parsers',
-    authors: [NAME, cjj, wq, dhx],
+    authors: [me, cjj, wq, dhx],
     description: zipDescription,
     confAbbr: "USENIX Sec '25",
     confFull: '34th USENIX Security Symposium',

@@ -13,12 +13,21 @@
             <ol>
               <li
                 v-for="(author, index) of conf.authors"
-                :key="author"
+                :key="author.name"
                 class="inline"
               >
-                <span :class="author === NAME ? 'font-bold' : ''">
-                  {{ author }}
+                <span
+                  v-if="author.name === NAME"
+                  class="font-bold"
+                >
+                  {{ NAME }}
                 </span>
+                <a
+                  v-else
+                  :href="author.url"
+                >
+                  {{ author.name }}
+                </a>
                 <template v-if="index < (conf.equalContribution ?? 0)">
                   <span
                     title="Equal contribution"
@@ -125,8 +134,9 @@ const CONFERENCE_ITEMS = [
 ] as const;
 
 function bibtex(conf: Conference) {
-  const author = conf.authors.join(' and ');
-  const authorKey = conf.authors[0]?.split(' ').at(-1)?.toLowerCase();
+  const names = conf.authors.map((author) => author.name);
+  const author = names.join(' and ');
+  const authorKey = names[0]?.split(' ').at(-1)?.toLowerCase();
   const titleKey = conf.title.split(' ')
     .slice(0, 3)
     .join('')
@@ -158,9 +168,9 @@ useSchemaOrg(CONFERENCES.map<ScholarlyArticle>((conf) => ({
   'name': conf.title,
   'headline': conf.title,
   'author': conf.authors.map((author) => (
-    author === NAME
+    author.name === NAME
       ? { '@id': `${SITE_URL}#identity` }
-      : { '@type': 'Person', 'name': author }
+      : { '@type': 'Person', 'name': author.name, 'url': author.url }
   )),
   'datePublished': conf.date.toISOString(),
   'publisher': {
