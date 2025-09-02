@@ -16,6 +16,7 @@ export interface Conference {
   publisher: string;
   url?: string;
   pdf?: string;
+  scholar?: string;
   slides?: string;
   talk?: string;
   poster?: string;

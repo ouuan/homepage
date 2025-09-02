@@ -94,6 +94,7 @@ import { CONFERENCES, type Conference } from './publications';
 const CONFERENCE_ITEMS = [
   ['url', 'URL'],
   ['pdf', 'PDF'],
+  ['scholar', 'Scholar'],
   ['slides', 'Slides'],
   ['talk', 'Talk'],
   ['poster', 'Poster'],
