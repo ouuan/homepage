@@ -38,6 +38,7 @@ import { useHead } from '@unhead/vue';
 import type { ImageObject } from 'schema-dts';
 import ImageModal from './ImageModal.vue';
 import {
+  AFFILIATION,
   AWARDS,
   CHINESE_NAME,
   NAME,
@@ -68,6 +69,10 @@ useSchemaOrg([
     name: NAME,
     image: photoSchema as any, // not sure why the typecheck here is extremely slow
     alternateName: CHINESE_NAME,
+    affiliation: {
+      '@type': 'Organization',
+      'name': AFFILIATION,
+    },
     sameAs: SOCIALS.filter((social) => social.sameAs).map((social) => social.url),
     award: Object.values(AWARDS).flatMap((awards) => awards.map((award) => award.title)),
   }),

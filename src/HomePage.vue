@@ -95,6 +95,7 @@ import ProjectSection from './ProjectSection.vue';
 import PublicationSection from './PublicationSection.vue';
 import {
   ADDITIONAL_HEAD,
+  AFFILIATION,
   CHINESE_NAME,
   DESCRIPTION,
   NAME,
@@ -169,7 +170,7 @@ const fontFaces = fonts.map((font) => `@font-face {
 }`).join(' ').replace(/\s+/g, ' ');
 
 useHead({
-  title: NAME,
+  title: `${NAME}（${CHINESE_NAME}）| ${AFFILIATION}`,
   htmlAttrs: { lang: 'en' },
   link: [
     { rel: 'canonical', href: SITE_URL },
