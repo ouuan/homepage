@@ -38,7 +38,7 @@
           <div class="my-2">
             <component :is="conf.description" />
           </div>
-          <div class="mt-1 flex flex-wrap gap-2 items-start md:flex-nowrap">
+          <div class="mt-1 flex flex-wrap gap-2 items-start">
             <span
               v-if="!conf.url && !conf.pdf"
               class="btn-outline shrink-0"
@@ -61,7 +61,9 @@
               <summary class="px-1 py-0.5 rd-1 btn-status group-open:pb-1">
                 <span>BibTeX</span>
               </summary>
-              <pre class="p-3 b-t-1 whitespace-pre-wrap dark:b-dark-200">{{ bibtex(conf) }}</pre>
+              <pre
+                class="p-3 b-t-1 select-all whitespace-pre-wrap dark:b-dark-200"
+              >{{ bibtex(conf) }}</pre>
             </details>
           </div>
         </div>
