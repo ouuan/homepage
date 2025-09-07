@@ -35,7 +35,7 @@
     "unplugin-vue-markdown": "28.3.1",
     "vite": "7.1.4",
     "vite-plugin-image-presets": "0.3.4",
-    "vite-ssg": "26.1.1",
+    "vite-ssg": "28.1.0",
     "vue-tsc": "2.2.12"
   }
 }
