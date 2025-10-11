@@ -1,6 +1,6 @@
 # homepage
 
-[My academic homepage](https://yufanyou.com)
+[My academic homepage](https://yufan.you)
 
 ```console
 $ pnpm i

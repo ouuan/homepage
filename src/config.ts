@@ -2,7 +2,7 @@ import type { UseHeadInput } from '@unhead/vue';
 
 export const NAME = 'Yufan You';
 export const CHINESE_NAME = '游宇凡';
-export const SITE_URL = 'https://yufanyou.com';
+export const SITE_URL = 'https://yufan.you';
 export const AFFILIATION = 'Tsinghua University';
 export const DESCRIPTION = [
   'Yufan You at Tsinghua University.',
@@ -137,10 +137,10 @@ export const SERVICES: ListItem[] = [
 export const ADDITIONAL_HEAD: UseHeadInput = {
   script: [
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-    ...(SITE_URL === 'https://yufanyou.com'
+    ...(SITE_URL === 'https://yufan.you'
       ? [{
           'defer': true,
-          'data-domain': 'yufanyou.com',
+          'data-domain': 'yufan.you',
           'src': 'https://plausible.ouuan.moe/js/script.js',
         }]
       : []),
