@@ -44,7 +44,7 @@ importers:
         version: 66.4.2(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       '@vitejs/plugin-vue':
         specifier: 6.0.1
-        version: 6.0.1(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))
+        version: 6.0.1(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))
       eslint:
         specifier: 9.37.0
         version: 9.37.0(jiti@2.6.1)
@@ -62,19 +62,19 @@ importers:
         version: 5.9.3
       unocss:
         specifier: 66.4.2
-        version: 66.4.2(postcss@8.5.6)(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))
+        version: 66.4.2(postcss@8.5.6)(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))
       unplugin-vue-markdown:
         specifier: 29.2.0
-        version: 29.2.0(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))
+        version: 29.2.0(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))
       vite:
-        specifier: 7.1.11
-        version: 7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
+        specifier: 7.1.12
+        version: 7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
       vite-plugin-image-presets:
         specifier: 0.3.4
         version: 0.3.4
       vite-ssg:
         specifier: 28.2.1
-        version: 28.2.1(postcss@8.5.6)(unhead@2.0.19)(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))
+        version: 28.2.1(postcss@8.5.6)(unhead@2.0.19)(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))
       vue-tsc:
         specifier: 3.1.1
         version: 3.1.1(typescript@5.9.3)
@@ -2634,8 +2634,8 @@ packages:
       vue-router:
         optional: true
 
-  vite@7.1.11:
-    resolution: {integrity: sha512-uzcxnSDVjAopEUjljkWh8EIrg6tlzrjFUfMcR1EVsRDGwf/ccef0qQPRyOrROwhrTDaApueq+ja+KLPlzR/zdg==}
+  vite@7.1.12:
+    resolution: {integrity: sha512-ZWyE8YXEXqJrrSLvYgrRP7p62OziLW7xI5HYGWFzOvupfAlrLvURSzv/FyGyy0eidogEM3ujU+kUG1zuHgb6Ug==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3442,13 +3442,13 @@ snapshots:
       unhead: 2.0.19
       vue: 3.5.22(typescript@5.9.3)
 
-  '@unocss/astro@66.4.2(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))':
+  '@unocss/astro@66.4.2(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))':
     dependencies:
       '@unocss/core': 66.4.2
       '@unocss/reset': 66.4.2
-      '@unocss/vite': 66.4.2(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))
+      '@unocss/vite': 66.4.2(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))
     optionalDependencies:
-      vite: 7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
+      vite: 7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
 
   '@unocss/cli@66.4.2':
     dependencies:
@@ -3600,7 +3600,7 @@ snapshots:
     dependencies:
       '@unocss/core': 66.4.2
 
-  '@unocss/vite@66.4.2(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))':
+  '@unocss/vite@66.4.2(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@unocss/config': 66.4.2
@@ -3611,12 +3611,12 @@ snapshots:
       pathe: 2.0.3
       tinyglobby: 0.2.15
       unplugin-utils: 0.2.5
-      vite: 7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
+      vite: 7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
 
-  '@vitejs/plugin-vue@6.0.1(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.1(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.29
-      vite: 7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
+      vite: 7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
       vue: 3.5.22(typescript@5.9.3)
 
   '@volar/language-core@2.4.23':
@@ -5579,9 +5579,9 @@ snapshots:
     dependencies:
       hookable: 5.5.3
 
-  unocss@66.4.2(postcss@8.5.6)(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)):
+  unocss@66.4.2(postcss@8.5.6)(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)):
     dependencies:
-      '@unocss/astro': 66.4.2(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))
+      '@unocss/astro': 66.4.2(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))
       '@unocss/cli': 66.4.2
       '@unocss/core': 66.4.2
       '@unocss/postcss': 66.4.2(postcss@8.5.6)
@@ -5599,9 +5599,9 @@ snapshots:
       '@unocss/transformer-compile-class': 66.4.2
       '@unocss/transformer-directives': 66.4.2
       '@unocss/transformer-variant-group': 66.4.2
-      '@unocss/vite': 66.4.2(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))
+      '@unocss/vite': 66.4.2(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))
     optionalDependencies:
-      vite: 7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
+      vite: 7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
     transitivePeerDependencies:
       - postcss
       - supports-color
@@ -5616,7 +5616,7 @@ snapshots:
       pathe: 2.0.3
       picomatch: 4.0.3
 
-  unplugin-vue-markdown@29.2.0(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)):
+  unplugin-vue-markdown@29.2.0(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)):
     dependencies:
       '@mdit-vue/plugin-component': 3.0.2
       '@mdit-vue/plugin-frontmatter': 3.0.2
@@ -5626,7 +5626,7 @@ snapshots:
       markdown-it-async: 2.2.0
       unplugin: 2.3.10
       unplugin-utils: 0.3.1
-      vite: 7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
+      vite: 7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
 
   unplugin@2.3.10:
     dependencies:
@@ -5652,7 +5652,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-ssg@28.2.1(postcss@8.5.6)(unhead@2.0.19)(vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3)):
+  vite-ssg@28.2.1(postcss@8.5.6)(unhead@2.0.19)(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       '@unhead/dom': 2.0.19(unhead@2.0.19)
       '@unhead/vue': 2.0.19(vue@3.5.22(typescript@5.9.3))
@@ -5661,7 +5661,7 @@ snapshots:
       html-minifier-terser: 7.2.0
       html5parser: 2.0.2
       jsdom: 27.0.1(postcss@8.5.6)
-      vite: 7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
+      vite: 7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0)
       vue: 3.5.22(typescript@5.9.3)
     transitivePeerDependencies:
       - bufferutil
@@ -5671,7 +5671,7 @@ snapshots:
       - unhead
       - utf-8-validate
 
-  vite@7.1.11(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0):
+  vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0):
     dependencies:
       esbuild: 0.25.11
       fdir: 6.5.0(picomatch@4.0.3)
