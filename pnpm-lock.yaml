@@ -73,8 +73,8 @@ importers:
         specifier: 0.3.4
         version: 0.3.4
       vite-ssg:
-        specifier: 28.2.1
-        version: 28.2.1(postcss@8.5.6)(unhead@2.0.19)(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))
+        specifier: 28.2.2
+        version: 28.2.2(postcss@8.5.6)(unhead@2.0.19)(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))
       vue-tsc:
         specifier: 3.1.1
         version: 3.1.1(typescript@5.9.3)
@@ -2616,8 +2616,8 @@ packages:
   vite-plugin-image-presets@0.3.4:
     resolution: {integrity: sha512-jVMMY7iuzDCRNUgPKo5oMZ5QPeJA5bou6i+38SmGxW5zrqkRI3QBDGNnUqIUg/nhz7J1fQji1SagGjgiiKfW6w==}
 
-  vite-ssg@28.2.1:
-    resolution: {integrity: sha512-JGIF49JNBIO0+VF56srBEa/8j6bfnBCGyMz6JZiAUyB/cOOyEvlFOKohMdBg43EDcr5aoPiHqKr5SFtfTuqrDw==}
+  vite-ssg@28.2.2:
+    resolution: {integrity: sha512-aZQNtNMh+fVfaXjD+FZcSaE4Pnm/x/Rj5s9ce48CWLZjztfdijmrsTbda9B9ADnUL9VZy6N5yIa7GqC3XI+PCA==}
     engines: {node: '>=20.0.0'}
     hasBin: true
     peerDependencies:
@@ -5652,7 +5652,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-ssg@28.2.1(postcss@8.5.6)(unhead@2.0.19)(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3)):
+  vite-ssg@28.2.2(postcss@8.5.6)(unhead@2.0.19)(vite@7.1.12(@types/node@22.18.10)(jiti@2.6.1)(sass-embedded@1.93.2)(sass@1.93.2)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       '@unhead/dom': 2.0.19(unhead@2.0.19)
       '@unhead/vue': 2.0.19(vue@3.5.22(typescript@5.9.3))
