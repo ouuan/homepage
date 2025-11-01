@@ -29,7 +29,7 @@ export interface Conference {
   pdf?: string;
   scholar?: string;
   slides?: string;
-  talk?: string;
+  video?: string;
   poster?: string;
   code?: string;
   doi?: string;
@@ -73,7 +73,7 @@ export const CONFERENCES: Conference[] = [
     pdf: 'https://www.usenix.org/system/files/usenixsecurity25-you.pdf',
     scholar: 'https://scholar.google.com/citations?view_op=view_citation&citation_for_view=Hs9aAgIAAAAJ:u5HHmVD_uO8C',
     slides: 'https://www.usenix.org/system/files/sec25_slides_you-yufan.pdf',
-    talk: 'https://www.youtube.com/watch?v=N9Q6f_H0j80',
+    video: 'https://www.youtube.com/watch?v=N9Q6f_H0j80',
     poster: '/files/usenixsecurity25-you-poster.pdf',
     code: 'https://github.com/ouuan/ZipDiff',
     isbn: '978-1-939133-52-6',

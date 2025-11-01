@@ -7,12 +7,16 @@
           <li
             v-for="(social, index) of SOCIALS"
             :key="social.name"
+            class="flex items-center"
           >
             <a
               :href="social.url"
               rel="me"
-              class="link"
-            >{{ social.name }}</a>
+              class="link flex gap-1 items-center"
+            >
+              <span :class="`inline-block i-${social.icon}`" />
+              <span>{{ social.name }}</span>
+            </a>
             <span
               v-if="index < SOCIALS.length - 1"
               aria-hidden="true"

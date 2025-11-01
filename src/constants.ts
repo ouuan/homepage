@@ -14,3 +14,13 @@ export const BREAKPOINTS = {
 
 export const PROJECT_IMAGE_WRAP_BREAKPOINT = BREAKPOINTS.md;
 export const PROJECT_IMAGE_AUTO_BREAKPOINT = BREAKPOINTS.xs;
+
+export const BUTTON_MAP = {
+  url: { text: 'URL', icon: 'bi:globe' },
+  pdf: { text: 'PDF', icon: 'bi:file-pdf-fill' },
+  scholar: { text: 'Scholar', icon: 'fa7-brands:google-scholar' },
+  slides: { text: 'Slides', icon: 'bi:file-slides-fill' },
+  video: { text: 'Video', icon: 'bi:play-circle-fill' },
+  poster: { text: 'Poster', icon: 'bi:file-image-fill' },
+  code: { text: 'Code', icon: 'bi:git' },
+} as const;

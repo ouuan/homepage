@@ -24,14 +24,17 @@
             </div>
             <div class="flex gap-2">
               <template
-                v-for="([key, display]) of PROJECT_ITEMS"
+                v-for="key of PROJECT_KEYS"
                 :key="key"
               >
                 <a
                   v-if="project[key]"
                   :href="project[key]"
                   class="btn shrink-0"
-                >{{ display }}</a>
+                >
+                  <span :class="`inline-block i-${BUTTON_MAP[key].icon}`" />
+                  <span>{{ BUTTON_MAP[key].text }}</span>
+                </a>
               </template>
               <div class="text-right flex-grow">
                 {{ project.time }}
@@ -51,6 +54,7 @@ import type { CreativeWork } from 'schema-dts';
 import ImageModal from './ImageModal.vue';
 import { SITE_URL } from './config';
 import {
+  BUTTON_MAP,
   PAGE_PADDING,
   PROJECT_IMAGE_AUTO_BREAKPOINT,
   PROJECT_IMAGE_NOWRAP_WIDTH,
@@ -59,10 +63,7 @@ import {
 } from './constants';
 import { PROJECTS } from './projects';
 
-const PROJECT_ITEMS = [
-  ['code', 'Code'],
-  ['video', 'Video'],
-] as const;
+const PROJECT_KEYS = ['code', 'video'] as const;
 
 const SIZES = [
   `(min-width: ${PROJECT_IMAGE_WRAP_BREAKPOINT}) ${PROJECT_IMAGE_NOWRAP_WIDTH}em`,
@@ -86,7 +87,7 @@ useSchemaOrg(PROJECTS.map<CreativeWork>((project) => {
   return {
     '@type': 'CreativeWork',
     'name': project.title,
-    'sameAs': PROJECT_ITEMS.map(([key]) => project[key]).filter(Boolean),
+    'sameAs': PROJECT_KEYS.map((key) => project[key]).filter(Boolean),
     'image': {
       '@type': 'ImageObject',
       'contentUrl': new URL(project.image[0].src, SITE_URL).href,

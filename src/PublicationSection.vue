@@ -57,14 +57,17 @@
               title="The submission has been accepted, but the final paper is not yet available"
             >To appear</span>
             <template
-              v-for="([key, display]) of CONFERENCE_ITEMS"
+              v-for="key of CONFERENCE_KEYS"
               :key="key"
             >
               <a
                 v-if="conf[key]"
                 :href="conf[key]"
                 class="btn shrink-0"
-              >{{ display }}</a>
+              >
+                <span :class="`inline-block i-${BUTTON_MAP[key].icon}`" />
+                <span>{{ BUTTON_MAP[key].text }}</span>
+              </a>
             </template>
             <details
               class="group btn-outline"
@@ -121,17 +124,10 @@
 import { useSchemaOrg } from '@unhead/schema-org/vue';
 import type { ScholarlyArticle } from 'schema-dts';
 import { NAME, SITE_URL } from './config';
+import { BUTTON_MAP } from './constants';
 import { CONFERENCES, type Conference } from './publications';
 
-const CONFERENCE_ITEMS = [
-  ['url', 'URL'],
-  ['pdf', 'PDF'],
-  ['scholar', 'Scholar'],
-  ['slides', 'Slides'],
-  ['talk', 'Talk'],
-  ['poster', 'Poster'],
-  ['code', 'Code'],
-] as const;
+const CONFERENCE_KEYS = ['url', 'pdf', 'scholar', 'slides', 'video', 'poster', 'code'] as const;
 
 function bibtex(conf: Conference) {
   const names = conf.authors.map((author) => author.name);
@@ -183,14 +179,7 @@ useSchemaOrg(CONFERENCES.map<ScholarlyArticle>((conf) => ({
     'url': conf.confUrl,
   },
   'url': conf.url,
-  'sameAs': [
-    conf.pdf,
-    conf.scholar,
-    conf.slides,
-    conf.talk,
-    conf.poster,
-    conf.code,
-  ].filter(Boolean),
+  'sameAs': CONFERENCE_KEYS.map((key) => key !== 'url' && conf[key]).filter(Boolean),
   'award': conf.awards?.map((award) => award.name),
   ...((conf.doi && {
     identifier: {

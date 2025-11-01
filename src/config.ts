@@ -15,36 +15,43 @@ export const PHOTO_DESCRIPTION
 export interface Social {
   name: string;
   url: string;
+  icon: string;
   sameAs?: boolean; // include in schema.org Person sameAs
 }
 
 export const SOCIALS: Social[] = [
   {
     name: 'Email',
+    icon: 'bi:envelope-fill',
     url: 'mailto:youyf21@mails.tsinghua.edu.cn',
   },
   {
     name: 'GitHub',
+    icon: 'fa7-brands:github',
     url: 'https://github.com/ouuan',
     sameAs: true,
   },
   {
     name: 'Google Scholar',
+    icon: 'fa7-brands:google-scholar',
     url: 'https://scholar.google.com/citations?user=Hs9aAgIAAAAJ',
     sameAs: true,
   },
   {
     name: 'ORCID',
+    icon: 'fa7-brands:orcid',
     url: 'https://orcid.org/0009-0004-2975-2107',
     sameAs: true,
   },
   {
     name: 'Blog',
+    icon: 'bi:chat-text-fill',
     url: 'https://ouuan.moe',
     sameAs: true,
   },
   {
     name: 'Mastodon',
+    icon: 'fa7-brands:mastodon',
     url: 'https://mastodon.online/@ouuan',
     sameAs: true,
   },
