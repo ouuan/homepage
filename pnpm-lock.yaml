@@ -28,8 +28,8 @@ importers:
         specifier: 1.2.7
         version: 1.2.7
       '@iconify-json/fa7-brands':
-        specifier: 1.2.0
-        version: 1.2.0
+        specifier: 1.2.1
+        version: 1.2.1
       '@ouuan/eslint-config-vue':
         specifier: 2.1.0
         version: 2.1.0(@stylistic/eslint-plugin@4.4.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/parser@8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vue-eslint-parser@10.2.0(eslint@9.39.1(jiti@2.6.1)))
@@ -394,8 +394,8 @@ packages:
   '@iconify-json/bi@1.2.7':
     resolution: {integrity: sha512-IPz8WNxmLkH1I9msl+0Q4OnmjjvP4uU0Z61a4i4sqonB6vKSbMGUWuGn8/YuuszlReVj8rf+3gNv5JU8Xoljyg==}
 
-  '@iconify-json/fa7-brands@1.2.0':
-    resolution: {integrity: sha512-OTdHSwRmycgQQXQr7wJQFyD08zj4OxoRfaWhCuI3a9MhbnHJApU4U2Qbp6hP4zicqOmQB9UII9+MA1IDNNLPlQ==}
+  '@iconify-json/fa7-brands@1.2.1':
+    resolution: {integrity: sha512-LbOn96p41X63dIdag/vfuYnXQZcKjo0o9XZTzU58/HJOyV1rWb2TwitSgB1xiAcOMwswmvgXQV/+blZc+101dg==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3045,7 +3045,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/fa7-brands@1.2.0':
+  '@iconify-json/fa7-brands@1.2.1':
     dependencies:
       '@iconify/types': 2.0.0
 
