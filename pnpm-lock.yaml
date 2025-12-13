@@ -34,8 +34,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1(@stylistic/eslint-plugin@4.4.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/parser@8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vue-eslint-parser@10.2.0(eslint@9.39.1(jiti@2.6.1)))
       '@ouuan/tsconfig-vue':
-        specifier: 1.3.4
-        version: 1.3.4
+        specifier: 1.3.5
+        version: 1.3.5
       '@total-typescript/ts-reset':
         specifier: 0.6.1
         version: 0.6.1
@@ -467,11 +467,11 @@ packages:
       eslint: '>=9'
       typescript: '>=5'
 
-  '@ouuan/tsconfig-base@1.3.4':
-    resolution: {integrity: sha512-ixFbiDyy/P9Qu5QJtCCjnGK8/W1+BieBE3dib6GJBWwxMQg9K5TEXRgeH0v+/oL117Hi9kpNfEG+HdRCzTFrZg==}
+  '@ouuan/tsconfig-base@1.3.5':
+    resolution: {integrity: sha512-iPQrG6xLaa+ysPOE0hs0WN2E2vOqsTtBvBEf+LOcX5mFZ7lS823EtV2udx/2pfTXEKy0n6jO5f4LSi7NzJJubA==}
 
-  '@ouuan/tsconfig-vue@1.3.4':
-    resolution: {integrity: sha512-EInqbC16/7XGgawFqWtiQFK4VurEWdSd0x+f0sLFpbr7FNshWu6UjY/Uqjt1gb3FWCdzKS9qBDktuFo5lbYiKg==}
+  '@ouuan/tsconfig-vue@1.3.5':
+    resolution: {integrity: sha512-GgxkK8TkAw8rXzErIbX9MGOaFg7J6Boxv8Ew4nalQCTzWsMIuAw1EdctvC8F5tCxpD3Xi4SrWdqGnR+jfRCM2Q==}
 
   '@parcel/watcher-android-arm64@2.5.1':
     resolution: {integrity: sha512-KF8+j9nNbUN8vzOFDpRMsaKBHZ/mcjEjMToVMJOhTozkDonQFFrRcfdLWn6yWKCmJKmdVxSgHiYvTCef4/qcBA==}
@@ -3157,14 +3157,14 @@ snapshots:
       - supports-color
       - vue-eslint-parser
 
-  '@ouuan/tsconfig-base@1.3.4':
+  '@ouuan/tsconfig-base@1.3.5':
     dependencies:
       '@tsconfig/node-lts': 22.0.4
       '@tsconfig/strictest': 2.0.8
 
-  '@ouuan/tsconfig-vue@1.3.4':
+  '@ouuan/tsconfig-vue@1.3.5':
     dependencies:
-      '@ouuan/tsconfig-base': 1.3.4
+      '@ouuan/tsconfig-base': 1.3.5
 
   '@parcel/watcher-android-arm64@2.5.1':
     optional: true
