@@ -29,7 +29,7 @@
     "@unocss/eslint-config": "66.4.2",
     "@vitejs/plugin-vue": "6.0.5",
     "eslint": "9.39.4",
-    "sass-embedded": "1.97.3",
+    "sass-embedded": "1.98.0",
     "simple-git": "3.32.3",
     "subset-font": "2.4.0",
     "typescript": "5.9.3",
