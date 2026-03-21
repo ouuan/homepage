@@ -1,0 +1,1 @@
+import{i as e}from"./app-C-9NYyU7.js";var t=e({defaults:{"@type":`OpeningHoursSpecification`,opens:`00:00`,closes:`23:59`}});export{t as openingHoursResolver};

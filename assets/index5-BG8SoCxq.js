@@ -1,0 +1,1 @@
+import{a as e,h as t,i as n,l as r,p as i}from"./app-C-9NYyU7.js";import{P as a,p as o}from"./index3-D3Cn2GSC.js";var s=n({defaults:{"@type":`Comment`},idPrefix:`url`,resolve(e,t){return e.author=i(e.author,t,o,{root:!0}),e.dateCreated=r(e.dateCreated),e.dateModified=r(e.dateModified),e},resolveRootNode(n,{find:r}){let i=r(a);i&&t(n,`about`,e(i))}});export{s as commentResolver};
