@@ -1,1 +1,0 @@
-import{i as e,p as t}from"./app-C-9NYyU7.js";var n=e({cast(e){return typeof e==`number`?{value:e}:e},defaults:{"@type":`QuantitativeValue`}}),r=e({defaults:{"@type":`MonetaryAmount`},resolve(e,r){return typeof e.value!=`number`&&(e.value=t(e.value,r,n)),e}});export{n,r as t};

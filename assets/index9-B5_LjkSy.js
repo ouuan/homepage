@@ -1,1 +1,0 @@
-import{i as e}from"./app-C-9NYyU7.js";var t=e({cast(e){return typeof e==`string`?{url:e}:e},defaults:{"@type":`VirtualLocation`}});export{t as virtualLocationResolver};
