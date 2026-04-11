@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@unhead/schema-org':
-        specifier: 2.1.12
-        version: 2.1.12(@unhead/vue@2.1.12(vue@3.5.32(typescript@5.9.3)))
+        specifier: 2.1.13
+        version: 2.1.13(@unhead/vue@2.1.13(vue@3.5.32(typescript@5.9.3)))
       '@unhead/vue':
-        specifier: 2.1.12
-        version: 2.1.12(vue@3.5.32(typescript@5.9.3))
+        specifier: 2.1.13
+        version: 2.1.13(vue@3.5.32(typescript@5.9.3))
       '@unocss/reset':
         specifier: 66.4.2
         version: 66.4.2
@@ -836,13 +836,13 @@ packages:
     peerDependencies:
       unhead: 2.1.13
 
-  '@unhead/schema-org@2.1.12':
-    resolution: {integrity: sha512-oV1XkTi5LUmTo/R3IpICHgPqsyGxScW1cIuMq1n+o26REu9JiY8jSSJDDqoclcYWhgHf5VrdyelnvuLj7R6phA==}
+  '@unhead/schema-org@2.1.13':
+    resolution: {integrity: sha512-D9458jeB20lgLRgZxiTGi/iSbqP/pPsD2klGO5P2PlHOFxvejh9RUAhsz6LILac28Z6lFZPY4hs3mpW3batUtA==}
     peerDependencies:
-      '@unhead/react': ^2.1.12
-      '@unhead/solid-js': ^2.1.12
-      '@unhead/svelte': ^2.1.12
-      '@unhead/vue': ^2.1.12
+      '@unhead/react': ^2.1.13
+      '@unhead/solid-js': ^2.1.13
+      '@unhead/svelte': ^2.1.13
+      '@unhead/vue': ^2.1.13
     peerDependenciesMeta:
       '@unhead/react':
         optional: true
@@ -853,8 +853,8 @@ packages:
       '@unhead/vue':
         optional: true
 
-  '@unhead/vue@2.1.12':
-    resolution: {integrity: sha512-zEWqg0nZM8acpuTZE40wkeUl8AhIe0tU0OkilVi1D4fmVjACrwoh5HP6aNqJ8kUnKsoy6D+R3Vi/O+fmdNGO7g==}
+  '@unhead/vue@2.1.13':
+    resolution: {integrity: sha512-HYy0shaHRnLNW9r85gppO8IiGz0ONWVV3zGdlT8CQ0tbTwixznJCIiyqV4BSV1aIF1jJIye0pd1p/k6Eab8Z/A==}
     peerDependencies:
       vue: '>=3.5.18'
 
@@ -2619,9 +2619,6 @@ packages:
     resolution: {integrity: sha512-H/nlJ/h0ggGC+uRL3ovD+G0i4bqhvsDOpbDv7At5eFLlj2b41L8QliGbnl2H7SnDiYhENphh1tQFJZf+MyfLsQ==}
     engines: {node: '>=20.18.1'}
 
-  unhead@2.1.12:
-    resolution: {integrity: sha512-iTHdWD9ztTunOErtfUFk6Wr11BxvzumcYJ0CzaSCBUOEtg+DUZ9+gnE99i8QkLFT2q1rZD48BYYGXpOZVDLYkA==}
-
   unhead@2.1.13:
     resolution: {integrity: sha512-jO9M1sI6b2h/1KpIu4Jeu+ptumLmUKboRRLxys5pYHFeT+lqTzfNHbYUX9bxVDhC1FBszAGuWcUVlmvIPsah8Q==}
 
@@ -3471,17 +3468,17 @@ snapshots:
     dependencies:
       unhead: 2.1.13
 
-  '@unhead/schema-org@2.1.12(@unhead/vue@2.1.12(vue@3.5.32(typescript@5.9.3)))':
+  '@unhead/schema-org@2.1.13(@unhead/vue@2.1.13(vue@3.5.32(typescript@5.9.3)))':
     dependencies:
       ufo: 1.6.3
-      unhead: 2.1.12
+      unhead: 2.1.13
     optionalDependencies:
-      '@unhead/vue': 2.1.12(vue@3.5.32(typescript@5.9.3))
+      '@unhead/vue': 2.1.13(vue@3.5.32(typescript@5.9.3))
 
-  '@unhead/vue@2.1.12(vue@3.5.32(typescript@5.9.3))':
+  '@unhead/vue@2.1.13(vue@3.5.32(typescript@5.9.3))':
     dependencies:
       hookable: 6.1.0
-      unhead: 2.1.12
+      unhead: 2.1.13
       vue: 3.5.32(typescript@5.9.3)
 
   '@unocss/astro@66.4.2(vite@7.3.2(@types/node@24.12.2)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1))':
@@ -5615,10 +5612,6 @@ snapshots:
 
   undici@7.24.7: {}
 
-  unhead@2.1.12:
-    dependencies:
-      hookable: 6.1.0
-
   unhead@2.1.13:
     dependencies:
       hookable: 6.1.0
@@ -5697,7 +5690,7 @@ snapshots:
   vite-ssg@28.3.0(unhead@2.1.13)(vite@7.3.2(@types/node@24.12.2)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(terser@5.46.1))(vue@3.5.32(typescript@5.9.3)):
     dependencies:
       '@unhead/dom': 2.1.13(unhead@2.1.13)
-      '@unhead/vue': 2.1.12(vue@3.5.32(typescript@5.9.3))
+      '@unhead/vue': 2.1.13(vue@3.5.32(typescript@5.9.3))
       ansis: 4.2.0
       cac: 6.7.14
       html-minifier-terser: 7.2.0
