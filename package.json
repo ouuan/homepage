@@ -27,7 +27,7 @@
     "@types/node": "24.12.2",
     "@types/subset-font": "2.3.0",
     "@unocss/eslint-config": "66.4.2",
-    "@vitejs/plugin-vue": "6.0.5",
+    "@vitejs/plugin-vue": "6.0.6",
     "eslint": "9.39.4",
     "sass-embedded": "1.99.0",
     "simple-git": "3.33.0",
