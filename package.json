@@ -30,7 +30,7 @@
     "@vitejs/plugin-vue": "6.0.6",
     "eslint": "9.39.4",
     "sass-embedded": "1.99.0",
-    "simple-git": "3.33.0",
+    "simple-git": "3.36.0",
     "subset-font": "2.4.0",
     "typescript": "5.9.3",
     "unocss": "66.4.2",
