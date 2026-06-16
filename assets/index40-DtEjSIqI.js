@@ -1,0 +1,1 @@
+import{b as r,k as a}from"./app-Cv3lldu3.js";const s=r({defaults:{"@type":"SearchAction",target:{"@type":"EntryPoint"},"query-input":{"@type":"PropertyValueSpecification",valueRequired:!0,valueName:"search_term_string"}},resolve(e,t){return typeof e.target=="string"&&(e.target={"@type":"EntryPoint",urlTemplate:a(t.meta.host,e.target)}),e}});export{s as searchActionResolver};
