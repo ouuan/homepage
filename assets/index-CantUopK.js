@@ -1,0 +1,1 @@
+import{b as f,j as s,s as t,a}from"./app-CoH-xX9d.js";import{offerResolver as o}from"./index23-DvEC7G38.js";import"./schema-org.F44ipjVJ-iuNN2SCg.js";const m=f({defaults:{"@type":"AggregateOffer"},inheritMeta:[{meta:"currency",key:"priceCurrency"}],resolve(e,r){return e.offers=s(e.offers,r,o),e.offers&&t(e,"offerCount",a(e.offers).length),e}});export{m as aggregateOfferResolver};
