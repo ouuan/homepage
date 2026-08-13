@@ -14,7 +14,7 @@
             class="text-sm ml-3"
           >({{ item.note }})</span>
         </div>
-        <div class="text-right">
+        <div class="text-right max-w-28">
           {{ item.time }}
         </div>
       </div>
