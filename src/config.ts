@@ -87,6 +87,12 @@ export const AWARDS: Record<string, ListItem[]> = {
   ],
   'Competitions': [
     {
+      title: 'First Place in DEF CON CTF 34',
+      bold: ['First Place', 'DEF CON CTF 34'],
+      note: 'team member of Blue Water',
+      time: '2026',
+    },
+    {
       title: 'Second Place in DEF CON CTF 33',
       bold: ['Second Place', 'DEF CON CTF 33'],
       note: 'team member of Blue Water',
@@ -130,7 +136,7 @@ export const SERVICES: ListItem[] = [
   {
     title: 'Teaching Assistant of Programing and Training',
     bold: ['Programing and Training'],
-    time: 'Summer 2025',
+    time: 'Summer 2025-2026',
     note: 'Guide students to learn Rust & build projects',
   },
   {
